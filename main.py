@@ -23,7 +23,7 @@ def main():
 
     # Save DataFrame to CSV file
     save_path = "output"
-    os.makedirs(save_path, exist_ok=True)  # Create the 'output' directory if it doesn't exist
+    os.makedirs(save_path, exist_ok=True) 
     df.to_csv(os.path.join(save_path, "movie_reviews_with_sentiment.csv"), index=False)
 
     # Visualize sentiment distribution

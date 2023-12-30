@@ -24,7 +24,6 @@ def scrape_imdb_reviews(movie_url):
     response = requests.get(movie_url)
     soup = BeautifulSoup(response.text, 'html.parser')
     
-    # Assuming 'soup' is your BeautifulSoup object
     movie_element = soup.find('h3', itemprop='name')
 
     if movie_element:
@@ -121,8 +120,17 @@ def perform_sentiment_analysis(movie_code):
 st.title("IMDb Movie Reviews Sentiment Analysis")
 
 GetCode = st.image("screenshots/HowToGetIMDBCode.png", caption="How To Get IMDB Code", use_column_width=True)
+
 # Input field for IMDb code
 movie_code = st.text_input("Enter IMDb Code (e.g., tt12915716, tt0111161):")
+
+# Add custom CSS to hide the GitHub icon
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 # Button to trigger sentiment analysis
 if st.button("Perform Sentiment Analysis"):
