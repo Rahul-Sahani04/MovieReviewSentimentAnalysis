@@ -90,7 +90,7 @@ Step 2:
 
 ### How to Use
 
-To utilize the project, follow the steps outlined in the [Getting Started](#getting-started) section to set up the environment locally. Execute the Jupyter Notebooks in the specified order (`web_scraping.ipynb`, `data_preprocessing.ipynb`, `sentiment_analysis.ipynb`) to perform sentiment analysis on IMDb movie reviews.
+To utilize the project, follow the steps outlined in the [Getting Started](#getting-started) section to set up the environment locally. Execute all the cell Jupyter Notebooks named `MovieReview.py` to perform sentiment analysis on IMDb movie reviews.
 
 ### Contributing
 
