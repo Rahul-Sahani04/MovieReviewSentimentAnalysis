@@ -15,6 +15,7 @@ This project focuses on sentiment analysis of movie reviews extracted from IMDb.
 - [Sentiment Analysis](#sentiment-analysis)
 - [Model Evaluation](#model-evaluation)
 - [Results](#results)
+- [Screenshots](#screenshots)
 - [How to Use](#how-to-use)
 - [Contributing](#contributing)
 - [License](#license)
