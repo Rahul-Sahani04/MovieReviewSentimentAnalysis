@@ -76,7 +76,12 @@ The performance of the sentiment analysis model is thoroughly evaluated in terms
 
 ### Results
 
-Visualizations and results of the sentiment analysis are stored in the `images/` directory. These include the distribution of predicted sentiments and other relevant visualizations that aid in interpreting the sentiment analysis outcomes.
+Visualizations and results of the sentiment analysis are stored in the `results/` directory. These include the distribution of predicted sentiments and other relevant visualizations that aid in interpreting the sentiment analysis outcomes.
+
+### Screenshots
+
+Before:
+
 
 ### How to Use
 

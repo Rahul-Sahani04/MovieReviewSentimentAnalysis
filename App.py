@@ -29,7 +29,6 @@ def scrape_imdb_reviews(movie_url):
 
     if movie_element:
         movie_name = movie_element.find('a').get_text(strip=True)
-        print(movie_name)
     else:
         print("None")
 
@@ -121,7 +120,7 @@ def perform_sentiment_analysis(movie_code):
 # Streamlit app
 st.title("IMDb Movie Reviews Sentiment Analysis")
 
-GetCode = st.image("HowToGetIMDBCode.png", caption="How To Get IMDB Code", use_column_width=True)
+GetCode = st.image("screenshots/HowToGetIMDBCode.png", caption="How To Get IMDB Code", use_column_width=True)
 # Input field for IMDb code
 movie_code = st.text_input("Enter IMDb Code (e.g., tt12915716, tt0111161):")
 
