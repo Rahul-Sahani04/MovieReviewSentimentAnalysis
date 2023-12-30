@@ -105,6 +105,7 @@ def perform_sentiment_analysis(movie_code):
 # Streamlit app
 st.title("IMDb Movie Reviews Sentiment Analysis")
 
+st.image("HowToGetIMDBCode.png", caption="How To Get IMDB Code", use_column_width=True)
 # Input field for IMDb code
 movie_code = st.text_input("Enter IMDb Code (e.g., tt12915716):")
 
