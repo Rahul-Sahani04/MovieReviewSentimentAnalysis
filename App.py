@@ -16,10 +16,23 @@ nltk.download('vader_lexicon')
 nltk.download('punkt')
 nltk.download('stopwords')
 
+movie_name = ""
 # Function to scrape IMDb movie reviews
 def scrape_imdb_reviews(movie_url):
+    global movie_name
+    
     response = requests.get(movie_url)
     soup = BeautifulSoup(response.text, 'html.parser')
+    
+    # Assuming 'soup' is your BeautifulSoup object
+    movie_element = soup.find('h3', itemprop='name')
+
+    if movie_element:
+        movie_name = movie_element.find('a').get_text(strip=True)
+        print(movie_name)
+    else:
+        print("None")
+
     
     # Extracting review text
     reviews = [{'text': review_div.get_text(strip=True)} for review_div in soup.find_all('a', class_='title')]
@@ -92,6 +105,7 @@ def perform_sentiment_analysis(movie_code):
     negative_message = "The sentiment analysis did not identify a clear positive sentiment in the reviews."
 
     st.title("IMDb Movie Reviews Sentiment Analysis")
+    st.subheader(f"Movie Name: {movie_name}")
     st.image(plot_file_path, caption=f'Distribution of Predicted Sentiments in IMDb Reviews ({movie_code})', use_column_width=True)
     st.subheader("Sentiment Analysis Results:")
     st.write(df[['text', 'predicted_sentiment']])
@@ -100,6 +114,8 @@ def perform_sentiment_analysis(movie_code):
         st.success(positive_message)
     else:
         st.warning(negative_message)
+        
+    st.write(f"You can view the reviews [here]({movie_url})")
 
 
 # Streamlit app

@@ -1,0 +1,26 @@
+text,text_cleaned,tokens,compound,predicted_sentiment
+Some birds aren't meant to be caged.,some birds arent meant to be caged,"['bird', 'arent', 'meant', 'caged']",0.0,positive
+An incredible movie. One that lives with you.,an incredible movie one that lives with you,"['incredible', 'movie', 'one', 'life']",0.0,positive
+Don't Rent Shawshank.,dont rent shawshank,"['dont', 'rent', 'shawshank']",0.0,positive
+This is How Movies Should Be Made,this is how movies should be made,"['movie', 'made']",0.0,positive
+A classic piece of unforgettable film-making.,a classic piece of unforgettable filmmaking,"['classic', 'piece', 'unforgettable', 'filmmaking']",0.0,positive
+the shawshank redemption,the shawshank redemption,"['shawshank', 'redemption']",0.0,positive
+The Shawshank Redemption,the shawshank redemption,"['shawshank', 'redemption']",0.0,positive
+Stephen King's best adapted movie,stephen kings best adapted movie,"['stephen', 'king', 'best', 'adapted', 'movie']",0.6369,positive
+"Enthralling, fantastic, intriguing, truly remarkable!",enthralling fantastic intriguing truly remarkable,"['enthralling', 'fantastic', 'intriguing', 'truly', 'remarkable']",0.8779,positive
+Eternal Hope,eternal hope,"['eternal', 'hope']",0.4404,positive
+IMDb and the Greatest Film of All Time,imdb and the greatest film of all time,"['imdb', 'greatest', 'film', 'time']",0.6369,positive
+All-time prison film classic,alltime prison film classic,"['alltime', 'prison', 'film', 'classic']",-0.5106,negative
+My favorite movie of all time.,my favorite movie of all time,"['favorite', 'movie', 'time']",0.4588,positive
+"""I'm a convicted murderer who provides sound financial planning"".",im a convicted murderer who provides sound financial planning,"['im', 'convicted', 'murderer', 'provides', 'sound', 'financial', 'planning']",-0.6808,negative
+Simply the best,simply the best,"['simply', 'best']",0.6369,positive
+"Simply known as ""The Movie""",simply known as the movie,"['simply', 'known', 'movie']",0.0,positive
+Simply amazing. The best film of the 90's.,simply amazing the best film of the 90s,"['simply', 'amazing', 'best', 'film', '90']",0.8402,positive
+Prepare to be moved,prepare to be moved,"['prepare', 'moved']",0.0,positive
+"""I Had To Go To Prison To Learn To Be A Crook""",i had to go to prison to learn to be a crook,"['go', 'prison', 'learn', 'crook']",-0.5106,negative
+Shawshank Redeems Hollywood,shawshank redeems hollywood,"['shawshank', 'redeems', 'hollywood']",0.0,positive
+Masterpiece,masterpiece,['masterpiece'],0.6249,positive
+never give up hope,never give up hope,"['never', 'give', 'hope']",-0.3412,negative
+Powerful Masterpiece,powerful masterpiece,"['powerful', 'masterpiece']",0.7845,positive
+Hope can set you free and so can this remarkable film,hope can set you free and so can this remarkable film,"['hope', 'set', 'free', 'remarkable', 'film']",0.8952,positive
+A movie about an innocent clever man who learns to live within prison walls.,a movie about an innocent clever man who learns to live within prison walls,"['movie', 'innocent', 'clever', 'man', 'learns', 'live', 'within', 'prison', 'wall']",0.2732,positive
