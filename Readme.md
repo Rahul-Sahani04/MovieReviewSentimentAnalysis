@@ -80,8 +80,12 @@ Visualizations and results of the sentiment analysis are stored in the `results/
 
 ### Screenshots
 
-Before:
+Step 1:
+![Screenshot 1](https://github.com/Rahul-Sahani04/MovieReviewSentimentAnalysis/blob/main/screenshots/Streamlit1.png?raw=true)
 
+
+Step 2:
+![Screenshot 2](https://github.com/Rahul-Sahani04/MovieReviewSentimentAnalysis/blob/main/screenshots/Streamlit2.png?raw=true)
 
 ### How to Use
 
