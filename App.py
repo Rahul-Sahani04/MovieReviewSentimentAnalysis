@@ -20,26 +20,79 @@ movie_name = ""
 
 
 # Function to scrape IMDb movie reviews
-def scrape_imdb_reviews(movie_url):
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from bs4 import BeautifulSoup
+import requests
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
+from bs4 import BeautifulSoup
+import requests
+
+def scrape_imdb_reviews(movie_url, no_of_pages):
     global movie_name
+    global my_bar
+    # Set up ChromeOptions for headless browsing
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-gpu")  # Necessary for headless mode on some systems
+    chrome_options.add_argument("--window-size=1920x1080")  # Set a reasonable window size
 
-    response = requests.get(movie_url)
-    soup = BeautifulSoup(response.text, "html.parser")
+    # Create a headless WebDriver
+    driver = webdriver.Chrome(options=chrome_options)
 
-    movie_element = soup.find("h3", itemprop="name")
+    try:
+        # Navigate to the movie URL using the headless WebDriver
+        driver.get(movie_url)
 
-    if movie_element:
-        movie_name = movie_element.find("a").get_text(strip=True)
-    else:
-        print("None")
+        # Extracting movie name
+        movie_element = driver.find_element(By.CSS_SELECTOR, "h3[itemprop='name'] a")
+        movie_name = movie_element.text.strip()
 
-    # Extracting review text
-    reviews = [
-        {"text": review_div.get_text(strip=True)}
-        for review_div in soup.find_all("a", class_="title")
-    ]
+        # Print the movie name (optional)
+        print(f"Movie Name: {movie_name}")
+        
+        NoOfLoadMore = 0
+        per_cycle_increment = 100 / int(no_of_pages)
+        
+        # Click "load more" button until the user wants
+        while NoOfLoadMore < int(no_of_pages):
+            try:
+                my_bar.progress(int(per_cycle_increment) * NoOfLoadMore, text=progress_text)
+                # Extracting "load more" button and clicking it
+                loadMoreElement = driver.find_element(By.ID, "load-more-trigger")
+                loadMoreElement.click()
+                NoOfLoadMore += 1
 
-    return reviews
+                # Wait for dynamic content to load (adjust as needed)
+                driver.implicitly_wait(5)
+
+            except NoSuchElementException:
+                # Break the loop when the "load more" button is not found
+                break
+            
+
+        # Extracting review text after all "load more" clicks
+        soup = BeautifulSoup(driver.page_source, "html.parser")
+        reviews = [
+            {"text": review_div.get_text(strip=True)}
+            for review_div in soup.find_all("a", class_="title")
+        ]
+        
+        my_bar.empty()
+
+        return reviews
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+    finally:
+        # Close the WebDriver after scraping
+        driver.quit()
 
 
 # Function for text cleaning
@@ -68,12 +121,12 @@ def lemmatize_text(tokens):
 
 
 # Function to perform sentiment analysis
-def perform_sentiment_analysis(movie_code):
+def perform_sentiment_analysis(movie_code, num_of_pages):
     # IMDb movie URL
     movie_url = f"https://www.imdb.com/title/{movie_code}/reviews"
 
     # Scrape IMDb movie reviews
-    movie_reviews = scrape_imdb_reviews(movie_url)
+    movie_reviews = scrape_imdb_reviews(movie_url, num_of_pages)
 
     # Convert the list of dictionaries to a DataFrame
     df = pd.DataFrame(movie_reviews)
@@ -156,12 +209,16 @@ GetCode = st.image(
 
 # Input field for IMDb code
 movie_code = st.text_input("Enter IMDb Code (e.g., tt12915716, tt0111161):")
+num_of_pages = st.text_input("Enter No. of Review Pages to scrape (Enter 0 for scraping all the reviews <- Takes more time):")
 
+progress_text = "Operation in progress. Please wait."
 
 # Button to trigger sentiment analysis
 if st.button("Perform Sentiment Analysis"):
     if movie_code:
         GetCode.empty()
-        perform_sentiment_analysis(movie_code)
+        my_bar = st.progress(0, text=progress_text)
+        # with st.spinner('Loading...'):
+        perform_sentiment_analysis(movie_code, num_of_pages)
     else:
         st.warning("Please enter a valid IMDb Code.")
