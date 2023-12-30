@@ -11,6 +11,10 @@ from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from sklearn.metrics import accuracy_score, classification_report
 
+nltk.download('wordnet')
+nltk.download('vader_lexicon')
+nltk.download('punkt')
+
 # Function to scrape IMDb movie reviews
 def scrape_imdb_reviews(movie_url):
     response = requests.get(movie_url)

@@ -1,5 +1,6 @@
 # %% [markdown]
 # ### Import necessary libraries
+nltk.download('vader_lexicon')
 
 # %%
 # Import necessary libraries
@@ -69,7 +70,7 @@ if __name__ == "__main__":
 
 # %%
 # Sentiment Analysis using VADER
-# nltk.download('vader_lexicon')
+    
 
     vader = SentimentIntensityAnalyzer()
     df['compound'] = df['text_cleaned'].apply(lambda x: vader.polarity_scores(x)['compound'])
