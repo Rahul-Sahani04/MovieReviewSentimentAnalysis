@@ -1,6 +1,6 @@
 # %% [markdown]
 # ### Import necessary libraries
-nltk.download('vader_lexicon')
+# nltk.download('vader_lexicon')
 
 # %%
 # Import necessary libraries
