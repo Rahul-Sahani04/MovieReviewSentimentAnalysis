@@ -1,0 +1,26 @@
+text,text_cleaned,tokens,compound,predicted_sentiment
+"Besides a soulful score by Ajay Atul, this adaptation of Ramayana is a baffling and collosal dissapointment.",besides a soulful score by ajay atul this adaptation of ramayana is a baffling and collosal dissapointment,"['besides', 'soulful', 'score', 'ajay', 'atul', 'adaptation', 'ramayana', 'baffling', 'collosal', 'dissapointment']",0.0,positive
+Pathetic Ramayan parody,pathetic ramayan parody,"['pathetic', 'ramayan', 'parody']",-0.5719,negative
+How can someone make a movie that bad ?,how can someone make a movie that bad ,"['someone', 'make', 'movie', 'bad']",-0.5423,negative
+Tiresome Commercialized Ramayan,tiresome commercialized ramayan,"['tiresome', 'commercialized', 'ramayan']",0.0,positive
+"Pathetic ScreenPlay, Out of Context dialogues",pathetic screenplay out of context dialogues,"['pathetic', 'screenplay', 'context', 'dialogue']",-0.5719,negative
+Worst movie..,worst movie,"['worst', 'movie']",-0.6249,negative
+A Deeply Disappointing Adaptation: Aadipurush,a deeply disappointing adaptation aadipurush,"['deeply', 'disappointing', 'adaptation', 'aadipurush']",-0.5413,negative
+"Absolutely Trash Except That ""Ram Siya Ram"" Song",absolutely trash except that ram siya ram song,"['absolutely', 'trash', 'except', 'ram', 'siya', 'ram', 'song']",0.0,positive
+Don't waste your time and money,dont waste your time and money,"['dont', 'waste', 'time', 'money']",0.3252,positive
+Waste of time and money.,waste of time and money,"['waste', 'time', 'money']",-0.4215,negative
+Most Disheartening,most disheartening,['disheartening'],-0.4754,negative
+"Seems to be conspiracy to trash Hindus' sacred text, via this movie",seems to be conspiracy to trash hindus sacred text via this movie,"['seems', 'conspiracy', 'trash', 'hindu', 'sacred', 'text', 'via', 'movie']",-0.5267,negative
+Worst Ramayan adaptation with worst actor to play Lord Ram,worst ramayan adaptation with worst actor to play lord ram,"['worst', 'ramayan', 'adaptation', 'worst', 'actor', 'play', 'lord', 'ram']",-0.7783,negative
+Worst movie in the world,worst movie in the world,"['worst', 'movie', 'world']",-0.6249,negative
+Tanaji . Adipursh and Om Raut,tanaji  adipursh and om raut,"['tanaji', 'adipursh', 'om', 'raut']",0.0,positive
+Totally disappointed due to many reasons,totally disappointed due to many reasons,"['totally', 'disappointed', 'due', 'many', 'reason']",-0.5256,negative
+Watch if you wanna know how to make bad movie.,watch if you wanna know how to make bad movie,"['watch', 'wan', 'na', 'know', 'make', 'bad', 'movie']",-0.5423,negative
+"Bad dialogues, misguided story",bad dialogues misguided story,"['bad', 'dialogue', 'misguided', 'story']",-0.5423,negative
+Adipurush: A Disappointing and Controversial Adaptation,adipurush a disappointing and controversial adaptation,"['adipurush', 'disappointing', 'controversial', 'adaptation']",-0.6124,negative
+poorly executed epic,poorly executed epic,"['poorly', 'executed', 'epic']",0.0,positive
+"Extremely poor movie.Poor animation,costume,dialog and direction.",extremely poor moviepoor animationcostumedialog and direction,"['extremely', 'poor', 'moviepoor', 'animationcostumedialog', 'direction']",-0.5256,negative
+Intentionally distroyed the plot of movie,intentionally distroyed the plot of movie,"['intentionally', 'distroyed', 'plot', 'movie']",0.0,positive
+Trash,trash,['trash'],0.0,positive
+Adipurush: A Disappointing and Misguided Interpretation,adipurush a disappointing and misguided interpretation,"['adipurush', 'disappointing', 'misguided', 'interpretation']",-0.4939,negative
+"Adipurush will be known is a ""Kalank"" on bollywood.",adipurush will be known is a kalank on bollywood,"['adipurush', 'known', 'kalank', 'bollywood']",0.0,positive

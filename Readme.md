@@ -44,6 +44,9 @@ This project focuses on sentiment analysis of movie reviews extracted from IMDb.
     jupyter notebook
     ```
 
+4. Open and Run all the cell in the MovieReview.py
+
+
 ## Project Structure
 
 The project is organized into several components to facilitate a structured and modular approach.
