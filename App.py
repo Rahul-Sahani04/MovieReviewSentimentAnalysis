@@ -11,55 +11,66 @@ from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from sklearn.metrics import accuracy_score, classification_report
 
-nltk.download('wordnet')
-nltk.download('vader_lexicon')
-nltk.download('punkt')
-nltk.download('stopwords')
+nltk.download("wordnet")
+nltk.download("vader_lexicon")
+nltk.download("punkt")
+nltk.download("stopwords")
 
 movie_name = ""
+
+
 # Function to scrape IMDb movie reviews
 def scrape_imdb_reviews(movie_url):
     global movie_name
-    
+
     response = requests.get(movie_url)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    
-    movie_element = soup.find('h3', itemprop='name')
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    movie_element = soup.find("h3", itemprop="name")
 
     if movie_element:
-        movie_name = movie_element.find('a').get_text(strip=True)
+        movie_name = movie_element.find("a").get_text(strip=True)
     else:
         print("None")
 
-    
     # Extracting review text
-    reviews = [{'text': review_div.get_text(strip=True)} for review_div in soup.find_all('a', class_='title')]
-    
+    reviews = [
+        {"text": review_div.get_text(strip=True)}
+        for review_div in soup.find_all("a", class_="title")
+    ]
+
     return reviews
+
 
 # Function for text cleaning
 def clean_text(text):
-    cleaned_text = re.sub(r"[^\w\s]", "", text.lower())  # Convert to lowercase and remove special characters
+    cleaned_text = re.sub(
+        r"[^\w\s]", "", text.lower()
+    )  # Convert to lowercase and remove special characters
     return cleaned_text
+
 
 # Function for tokenization
 def tokenize_text(text):
     return nltk.word_tokenize(text)
+
 
 # Function for removing stopwords
 def remove_stopwords(tokens):
     stop_words = set(stopwords.words("english"))
     return [token for token in tokens if token.lower() not in stop_words]
 
+
 # Function for lemmatization
 def lemmatize_text(tokens):
     lemmatizer = WordNetLemmatizer()
     return [lemmatizer.lemmatize(token) for token in tokens]
 
+
 # Function to perform sentiment analysis
 def perform_sentiment_analysis(movie_code):
     # IMDb movie URL
-    movie_url = f'https://www.imdb.com/title/{movie_code}/reviews'
+    movie_url = f"https://www.imdb.com/title/{movie_code}/reviews"
 
     # Scrape IMDb movie reviews
     movie_reviews = scrape_imdb_reviews(movie_url)
@@ -75,62 +86,77 @@ def perform_sentiment_analysis(movie_code):
 
     # Sentiment Analysis using VADER
     vader = SentimentIntensityAnalyzer()
-    df['compound'] = df['text_cleaned'].apply(lambda x: vader.polarity_scores(x)['compound'])
+    df["compound"] = df["text_cleaned"].apply(
+        lambda x: vader.polarity_scores(x)["compound"]
+    )
 
     # Classify sentiments based on compound score
-    df['predicted_sentiment'] = df['compound'].apply(lambda x: 'positive' if x >= 0 else 'negative')
+    df["predicted_sentiment"] = df["compound"].apply(
+        lambda x: "positive" if x >= 0 else "negative"
+    )
 
     # Save results to CSV
     save_path = "results"
-    df.to_csv(os.path.join(save_path, f"movie_reviews_with_sentiment_for_{movie_code}.csv"), index=False)
+    df.to_csv(
+        os.path.join(save_path, f"movie_reviews_with_sentiment_for_{movie_code}.csv"),
+        index=False,
+    )
 
     # Visualize the distribution of predicted sentiments
-    colors = ["green" if col.lower() == "positive" else "red" for col in df["predicted_sentiment"].value_counts().index]
+    colors = [
+        "green" if col.lower() == "positive" else "red"
+        for col in df["predicted_sentiment"].value_counts().index
+    ]
     fig, ax = plt.subplots(figsize=(6, 4))
-    df['predicted_sentiment'].value_counts().plot(kind='bar', color=colors, ax=ax)
-    ax.set_title(f'Distribution of Predicted Sentiments in IMDb Reviews ({movie_code})')
-    ax.set_xlabel('Predicted Sentiment')
-    ax.set_ylabel('Count')
+    df["predicted_sentiment"].value_counts().plot(kind="bar", color=colors, ax=ax)
+    ax.set_title(f"Distribution of Predicted Sentiments in IMDb Reviews ({movie_code})")
+    ax.set_xlabel("Predicted Sentiment")
+    ax.set_ylabel("Count")
     plt.tight_layout()
 
     # Save the plot to a file
-    plot_file_path = os.path.join(save_path, f"sentiment_distribution_for_{movie_code}.png")
+    plot_file_path = os.path.join(
+        save_path, f"sentiment_distribution_for_{movie_code}.png"
+    )
     plt.savefig(plot_file_path)
 
     # Display a message indicating positive sentiment
-    more_counts = df['predicted_sentiment'].value_counts().index 
-    positive_message = "The movie has positive reviews! You should consider watching it."
+    more_counts = df["predicted_sentiment"].value_counts().index
+    positive_message = (
+        "The movie has positive reviews! You should consider watching it."
+    )
     negative_message = "The sentiment analysis did not identify a clear positive sentiment in the reviews."
 
     st.title("IMDb Movie Reviews Sentiment Analysis")
     st.subheader(f"Movie Name: {movie_name}")
-    st.image(plot_file_path, caption=f'Distribution of Predicted Sentiments in IMDb Reviews ({movie_code})', use_column_width=True)
+    st.image(
+        plot_file_path,
+        caption=f"Distribution of Predicted Sentiments in IMDb Reviews ({movie_code})",
+        use_column_width=True,
+    )
     st.subheader("Sentiment Analysis Results:")
-    st.write(df[['text', 'predicted_sentiment']])
+    st.write(df[["text", "predicted_sentiment"]])
     st.subheader("Sentiment Overview:")
     if "positive" == more_counts[0]:
         st.success(positive_message)
     else:
         st.warning(negative_message)
-        
+
     st.write(f"You can view the reviews [here]({movie_url})")
 
 
 # Streamlit app
 st.title("IMDb Movie Reviews Sentiment Analysis")
 
-GetCode = st.image("screenshots/HowToGetIMDBCode.png", caption="How To Get IMDB Code", use_column_width=True)
+GetCode = st.image(
+    "screenshots/HowToGetIMDBCode.png",
+    caption="How To Get IMDB Code",
+    use_column_width=True,
+)
 
 # Input field for IMDb code
 movie_code = st.text_input("Enter IMDb Code (e.g., tt12915716, tt0111161):")
 
-# Add custom CSS to hide the GitHub icon
-hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
-}
-"""
-st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 # Button to trigger sentiment analysis
 if st.button("Perform Sentiment Analysis"):
