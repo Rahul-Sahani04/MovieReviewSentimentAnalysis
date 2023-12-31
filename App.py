@@ -53,16 +53,21 @@ def scrape_imdb_reviews(movie_url, no_of_pages):
         movie_element = driver.find_element(By.CSS_SELECTOR, "h3[itemprop='name'] a")
         movie_name = movie_element.text.strip()
 
-        # Print the movie name (optional)
+        # Print the movie name 
         print(f"Movie Name: {movie_name}")
         
         NoOfLoadMore = 0
-        per_cycle_increment = 100 / int(no_of_pages)
+        if int(no_of_pages > 0):
+            per_cycle_increment = 100 / int(no_of_pages)
         
         # Click "load more" button until the user wants
-        while NoOfLoadMore < int(no_of_pages):
+        while True:
             try:
-                my_bar.progress(int(per_cycle_increment) * NoOfLoadMore, text=progress_text)
+                if int(no_of_pages > 0):
+                    if int(per_cycle_increment) * NoOfLoadMore < 100:
+                        my_bar.progress(int(per_cycle_increment) * NoOfLoadMore, text=progress_text)
+                    if NoOfLoadMore > int(no_of_pages):
+                        break
                 # Extracting "load more" button and clicking it
                 loadMoreElement = driver.find_element(By.ID, "load-more-trigger")
                 loadMoreElement.click()
@@ -209,7 +214,7 @@ GetCode = st.image(
 
 # Input field for IMDb code
 movie_code = st.text_input("Enter IMDb Code (e.g., tt12915716, tt0111161):")
-num_of_pages = st.text_input("Enter No. of Review Pages to scrape (Enter 0 for scraping all the reviews <- Takes more time):")
+num_of_pages = st.number_input("Enter No. of Review Pages to scrape (Enter 0 for scraping all the reviews <- Takes more time):", step=1, min_value=0)
 
 progress_text = "Operation in progress. Please wait."
 
@@ -217,8 +222,11 @@ progress_text = "Operation in progress. Please wait."
 if st.button("Perform Sentiment Analysis"):
     if movie_code:
         GetCode.empty()
-        my_bar = st.progress(0, text=progress_text)
-        # with st.spinner('Loading...'):
-        perform_sentiment_analysis(movie_code, num_of_pages)
+        if num_of_pages == 0:
+            with st.spinner('Loading...'):
+                perform_sentiment_analysis(movie_code, num_of_pages)
+        else:
+            my_bar = st.progress(0, text=progress_text)
+            perform_sentiment_analysis(movie_code, num_of_pages)
     else:
         st.warning("Please enter a valid IMDb Code.")
