@@ -1,26 +1,275 @@
-text,text_cleaned,tokens,compound,predicted_sentiment
-Fantastic...but possibly overwhelming.,fantasticbut possibly overwhelming,"['fantasticbut', 'possibly', 'overwhelming']",0.0,positive
-So Much More Than I Expected!,so much more than i expected,"['much', 'expected']",0.0,positive
-How on God's green Earth did this work so well???,how on gods green earth did this work so well,"['god', 'green', 'earth', 'work', 'well']",0.4101,positive
-The best comic book movie I've ever seen,the best comic book movie ive ever seen,"['best', 'comic', 'book', 'movie', 'ive', 'ever', 'seen']",0.6369,positive
-Stan Lee Is Smiling Right Now,stan lee is smiling right now,"['stan', 'lee', 'smiling', 'right']",0.4588,positive
-Game Changer,game changer,"['game', 'changer']",0.0,positive
-the most visually stunning film I've ever seen,the most visually stunning film ive ever seen,"['visually', 'stunning', 'film', 'ive', 'ever', 'seen']",0.4364,positive
-A Spidey Movie That Works In Multiple Dimensions,a spidey movie that works in multiple dimensions,"['spidey', 'movie', 'work', 'multiple', 'dimension']",0.0,positive
-Captures Your Attention From The Get Go!,captures your attention from the get go,"['capture', 'attention', 'get', 'go']",0.0,positive
-"The better the art, the harder it is to find the right words to describe it.",the better the art the harder it is to find the right words to describe it,"['better', 'art', 'harder', 'find', 'right', 'word', 'describe']",0.4404,positive
-A game changer.,a game changer,"['game', 'changer']",0.0,positive
-Giving Infinity war a run for it's money,giving infinity war a run for its money,"['giving', 'infinity', 'war', 'run', 'money']",-0.3612,negative
-"Visually innovative, but has a lack of focus and is overstuffed.",visually innovative but has a lack of focus and is overstuffed,"['visually', 'innovative', 'lack', 'focus', 'overstuffed']",-0.25,negative
-"Creative, funny, engaging, and exciting",creative funny engaging and exciting,"['creative', 'funny', 'engaging', 'exciting']",0.886,positive
-The Best Spider-Man movie ever!,the best spiderman movie ever,"['best', 'spiderman', 'movie', 'ever']",0.6369,positive
-This movie is not over hyped!,this movie is not over hyped,"['movie', 'hyped']",0.0,positive
-What's better than one Spidey? Six Spideys of course!,whats better than one spidey six spideys of course,"['whats', 'better', 'one', 'spidey', 'six', 'spideys', 'course']",0.4404,positive
-See it in 3D!!!,see it in 3d,"['see', '3d']",0.0,positive
-Out of This Dimension Good! 100/10 off the Charts!,out of this dimension good 10010 off the charts,"['dimension', 'good', '10010', 'chart']",0.4404,positive
-"Sony, you are reedemed.",sony you are reedemed,"['sony', 'reedemed']",0.0,positive
-Come on give this a chance,come on give this a chance,"['come', 'give', 'chance']",0.3071,positive
-A little overrated but still good.,a little overrated but still good,"['little', 'overrated', 'still', 'good']",0.5927,positive
-The BEST depection of Spider-Man yet!,the best depection of spiderman yet,"['best', 'depection', 'spiderman', 'yet']",0.6369,positive
-"Too kid friendly, but good!",too kid friendly but good,"['kid', 'friendly', 'good']",0.714,positive
-Cinematic Euphoria,cinematic euphoria,"['cinematic', 'euphoria']",0.6486,positive
+text,date,text_cleaned,tokens,compound,predicted_sentiment
+Fantastic...but possibly overwhelming.,26 March 2019,fantasticbut possibly overwhelming,"['fantasticbut', 'possibly', 'overwhelming']",0.0,positive
+So Much More Than I Expected!,19 November 2019,so much more than i expected,"['much', 'expected']",0.0,positive
+How on God's green Earth did this work so well???,21 December 2018,how on gods green earth did this work so well,"['god', 'green', 'earth', 'work', 'well']",0.4101,positive
+The best comic book movie I've ever seen,26 December 2018,the best comic book movie ive ever seen,"['best', 'comic', 'book', 'movie', 'ive', 'ever', 'seen']",0.6369,positive
+Stan Lee Is Smiling Right Now,17 December 2018,stan lee is smiling right now,"['stan', 'lee', 'smiling', 'right']",0.4588,positive
+Game Changer,21 December 2018,game changer,"['game', 'changer']",0.0,positive
+the most visually stunning film I've ever seen,20 December 2018,the most visually stunning film ive ever seen,"['visually', 'stunning', 'film', 'ive', 'ever', 'seen']",0.4364,positive
+A Spidey Movie That Works In Multiple Dimensions,14 December 2018,a spidey movie that works in multiple dimensions,"['spidey', 'movie', 'work', 'multiple', 'dimension']",0.0,positive
+Captures Your Attention From The Get Go!,12 December 2018,captures your attention from the get go,"['capture', 'attention', 'get', 'go']",0.0,positive
+"The better the art, the harder it is to find the right words to describe it.",21 December 2018,the better the art the harder it is to find the right words to describe it,"['better', 'art', 'harder', 'find', 'right', 'word', 'describe']",0.4404,positive
+A game changer.,4 July 2023,a game changer,"['game', 'changer']",0.0,positive
+Giving Infinity war a run for it's money,15 December 2018,giving infinity war a run for its money,"['giving', 'infinity', 'war', 'run', 'money']",-0.3612,negative
+"Visually innovative, but has a lack of focus and is overstuffed.",4 January 2019,visually innovative but has a lack of focus and is overstuffed,"['visually', 'innovative', 'lack', 'focus', 'overstuffed']",-0.25,negative
+"Creative, funny, engaging, and exciting",22 September 2019,creative funny engaging and exciting,"['creative', 'funny', 'engaging', 'exciting']",0.886,positive
+The Best Spider-Man movie ever!,21 December 2018,the best spiderman movie ever,"['best', 'spiderman', 'movie', 'ever']",0.6369,positive
+This movie is not over hyped!,15 December 2018,this movie is not over hyped,"['movie', 'hyped']",0.0,positive
+What's better than one Spidey? Six Spideys of course!,16 December 2018,whats better than one spidey six spideys of course,"['whats', 'better', 'one', 'spidey', 'six', 'spideys', 'course']",0.4404,positive
+See it in 3D!!!,14 December 2018,see it in 3d,"['see', '3d']",0.0,positive
+Out of This Dimension Good! 100/10 off the Charts!,15 December 2018,out of this dimension good 10010 off the charts,"['dimension', 'good', '10010', 'chart']",0.4404,positive
+"Sony, you are reedemed.",20 December 2018,sony you are reedemed,"['sony', 'reedemed']",0.0,positive
+Come on give this a chance,20 December 2018,come on give this a chance,"['come', 'give', 'chance']",0.3071,positive
+A little overrated but still good.,13 March 2019,a little overrated but still good,"['little', 'overrated', 'still', 'good']",0.5927,positive
+The BEST depection of Spider-Man yet!,17 December 2018,the best depection of spiderman yet,"['best', 'depection', 'spiderman', 'yet']",0.6369,positive
+"Too kid friendly, but good!",25 February 2019,too kid friendly but good,"['kid', 'friendly', 'good']",0.714,positive
+Cinematic Euphoria,21 December 2018,cinematic euphoria,"['cinematic', 'euphoria']",0.6486,positive
+One of the best superhero stories to hit the screen,23 December 2018,one of the best superhero stories to hit the screen,"['one', 'best', 'superhero', 'story', 'hit', 'screen']",0.6369,positive
+Spider-Man: Into the Spider-Verse will hopefully blow your mind as it did mine and a couple of friends of mine!,10 January 2019,spiderman into the spiderverse will hopefully blow your mind as it did mine and a couple of friends of mine,"['spiderman', 'spiderverse', 'hopefully', 'blow', 'mind', 'mine', 'couple', 'friend', 'mine']",0.7003,positive
+Possibly the Best Spider-Man Feature Film Ever Made,11 December 2018,possibly the best spiderman feature film ever made,"['possibly', 'best', 'spiderman', 'feature', 'film', 'ever', 'made']",0.6369,positive
+What a fascinating graphic to win Golden Globe very soon,15 December 2018,what a fascinating graphic to win golden globe very soon,"['fascinating', 'graphic', 'win', 'golden', 'globe', 'soon']",0.8074,positive
+So Much More Than I Could Have Hoped,18 December 2018,so much more than i could have hoped,"['much', 'could', 'hoped']",0.3818,positive
+I liked it more than Spider Man : Homecoming,21 December 2018,i liked it more than spider man  homecoming,"['liked', 'spider', 'man', 'homecoming']",0.4215,positive
+THE spider man movie,19 December 2018,the spider man movie,"['spider', 'man', 'movie']",0.0,positive
+"Anyone can wear the mask, but no one can rock it like Miles Morales",13 December 2018,anyone can wear the mask but no one can rock it like miles morales,"['anyone', 'wear', 'mask', 'one', 'rock', 'like', 'mile', 'morale']",0.1154,positive
+Stop with the race agenda @ IMDB users,7 December 2018,stop with the race agenda  imdb users,"['stop', 'race', 'agenda', 'imdb', 'user']",-0.296,negative
+"Into The Spider-verse reminds us why we love Spiderman so much, and does so in an original and humane way.",21 December 2018,into the spiderverse reminds us why we love spiderman so much and does so in an original and humane way,"['spiderverse', 'reminds', 'u', 'love', 'spiderman', 'much', 'original', 'humane', 'way']",0.7759,positive
+Best animated film of 2018,13 December 2018,best animated film of 2018,"['best', 'animated', 'film', '2018']",0.6369,positive
+One of My Favorites!!!,15 December 2018,one of my favorites,"['one', 'favorite']",0.4215,positive
+One of the best',21 December 2018,one of the best,"['one', 'best']",0.6369,positive
+Visually Beautiful but the Good Part of the Story is in Another Dimension,15 March 2019,visually beautiful but the good part of the story is in another dimension,"['visually', 'beautiful', 'good', 'part', 'story', 'another', 'dimension']",0.743,positive
+Amazing and spectacular,16 December 2018,amazing and spectacular,"['amazing', 'spectacular']",0.5859,positive
+Overrated and overhyped,11 January 2019,overrated and overhyped,"['overrated', 'overhyped']",0.0,positive
+"""What would I do if I were me?""",2 January 2019,what would i do if i were me,['would'],0.0,positive
+Groundbreaking experience!!,24 April 2023,groundbreaking experience,"['groundbreaking', 'experience']",0.0,positive
+Spider-Man Into the Spider-Verse,28 October 2020,spiderman into the spiderverse,"['spiderman', 'spiderverse']",0.0,positive
+loving Miles,23 February 2019,loving miles,"['loving', 'mile']",0.5994,positive
+Entertaining,14 December 2018,entertaining,['entertaining'],0.4404,positive
+"For such an inventive premise and excellent animation, questionable plot choices are made and the themes and arc are surprisingly formulaic",6 April 2019,for such an inventive premise and excellent animation questionable plot choices are made and the themes and arc are surprisingly formulaic,"['inventive', 'premise', 'excellent', 'animation', 'questionable', 'plot', 'choice', 'made', 'theme', 'arc', 'surprisingly', 'formulaic']",0.5719,positive
+Spider-Man Into the Spider-Verse: And with that the Oscars lose the last bit of credibility they had,22 March 2019,spiderman into the spiderverse and with that the oscars lose the last bit of credibility they had,"['spiderman', 'spiderverse', 'oscar', 'lose', 'last', 'bit', 'credibility']",-0.4019,negative
+My favorite Spiderman film,30 December 2018,my favorite spiderman film,"['favorite', 'spiderman', 'film']",0.4588,positive
+Animated Film of the Year,19 December 2018,animated film of the year,"['animated', 'film', 'year']",0.0,positive
+"Even with a large story and five different Spider people, Spider-Man: Into the Spider-Verse is an entertaining movie with a story and look that's all it's own",17 December 2018,even with a large story and five different spider people spiderman into the spiderverse is an entertaining movie with a story and look thats all its own,"['even', 'large', 'story', 'five', 'different', 'spider', 'people', 'spiderman', 'spiderverse', 'entertaining', 'movie', 'story', 'look', 'thats']",0.4404,positive
+How many IMDB accounts does the animation department have?,31 March 2019,how many imdb accounts does the animation department have,"['many', 'imdb', 'account', 'animation', 'department']",0.0,positive
+Ah Man!,14 December 2018,ah man,"['ah', 'man']",0.0,positive
+Slapstick for the ADHD-generation,2 March 2019,slapstick for the adhdgeneration,"['slapstick', 'adhdgeneration']",0.0,positive
+One of the best Spiderman/Superhero movies to be released,15 December 2018,one of the best spidermansuperhero movies to be released,"['one', 'best', 'spidermansuperhero', 'movie', 'released']",0.6369,positive
+Joseph Campbell Meets Bansky Meets Spider-Man,16 December 2018,joseph campbell meets bansky meets spiderman,"['joseph', 'campbell', 'meet', 'bansky', 'meet', 'spiderman']",0.0,positive
+Amazing graphics,17 July 2019,amazing graphics,"['amazing', 'graphic']",0.5859,positive
+Who did this and what have they done with the REAL Sony,13 December 2018,who did this and what have they done with the real sony,"['done', 'real', 'sony']",0.0,positive
+Not Really My Style,6 November 2021,not really my style,"['really', 'style']",0.0,positive
+Holy... I can't even... YEAH!,19 December 2018,holy i cant even yeah,"['holy', 'cant', 'even', 'yeah']",-0.2235,negative
+Utterly Amazing,24 December 2018,utterly amazing,"['utterly', 'amazing']",0.624,positive
+Spider-Man Comic-Book Comes To Life..!,25 December 2018,spiderman comicbook comes to life,"['spiderman', 'comicbook', 'come', 'life']",0.0,positive
+It's just okay.,3 March 2019,its just okay,['okay'],0.2263,positive
+WAYYY Better Than Expected,7 December 2018,wayyy better than expected,"['wayyy', 'better', 'expected']",0.4404,positive
+Since they conclude with Quantum Explosions . . .,21 December 2018,since they conclude with quantum explosions   ,"['since', 'conclude', 'quantum', 'explosion']",0.0,positive
+Already nominated for a Golden Globe for Best Picture Animation,15 December 2018,already nominated for a golden globe for best picture animation,"['already', 'nominated', 'golden', 'globe', 'best', 'picture', 'animation']",0.6369,positive
+Wow.... I don't even know how to react!!,19 December 2018,wow i dont even know how to react,"['wow', 'dont', 'even', 'know', 'react']",0.5859,positive
+I can't believe it's masterpiece,20 December 2018,i cant believe its masterpiece,"['cant', 'believe', 'masterpiece']",-0.5096,negative
+Overrated,27 May 2019,overrated,['overrated'],0.0,positive
+Hm,23 February 2019,hm,['hm'],0.0,positive
+Spidey-sense very common in this radioactive spin on the web-slinger,19 December 2018,spideysense very common in this radioactive spin on the webslinger,"['spideysense', 'common', 'radioactive', 'spin', 'webslinger']",0.0,positive
+Amazing!,14 December 2018,amazing,['amazing'],0.5859,positive
+Just plain silly,26 March 2019,just plain silly,"['plain', 'silly']",0.0258,positive
+One of the biggest movie of the year,15 December 2018,one of the biggest movie of the year,"['one', 'biggest', 'movie', 'year']",0.0,positive
+Clever clever and clever,25 December 2018,clever clever and clever,"['clever', 'clever', 'clever']",0.8402,positive
+"Gripping, But Preachy About Identity Politics",4 April 2019,gripping but preachy about identity politics,"['gripping', 'preachy', 'identity', 'politics']",0.0,positive
+A franchise on drugs,10 March 2019,a franchise on drugs,"['franchise', 'drug']",0.0,positive
+"Despite the animation, still pretty much your average comic-book movie",7 October 2019,despite the animation still pretty much your average comicbook movie,"['despite', 'animation', 'still', 'pretty', 'much', 'average', 'comicbook', 'movie']",0.4939,positive
+So Unique!,20 December 2018,so unique,['unique'],0.0,positive
+There can only be ... wait? How many?,25 November 2020,there can only be  wait how many,"['wait', 'many']",0.0,positive
+Best spider man movie to date and a nice tribute to Stan Lee !,16 December 2018,best spider man movie to date and a nice tribute to stan lee ,"['best', 'spider', 'man', 'movie', 'date', 'nice', 'tribute', 'stan', 'lee']",0.7906,positive
+Overrated,3 March 2019,overrated,['overrated'],0.0,positive
+As in Sunflower wasn't annoying already,23 December 2019,as in sunflower wasnt annoying already,"['sunflower', 'wasnt', 'annoying', 'already']",0.3089,positive
+A feast for the eyes and ears,20 December 2018,a feast for the eyes and ears,"['feast', 'eye', 'ear']",0.0,positive
+Meandering and cringe at times,9 April 2022,meandering and cringe at times,"['meandering', 'cringe', 'time']",0.0,positive
+Best Spider-Man movie by far!!!,14 December 2018,best spiderman movie by far,"['best', 'spiderman', 'movie', 'far']",0.6369,positive
+"Story was okay, but not a fan of the main character",15 May 2022,story was okay but not a fan of the main character,"['story', 'okay', 'fan', 'main', 'character']",-0.2484,negative
+"Long live the Spider-Verse, just outstanding.",14 December 2018,long live the spiderverse just outstanding,"['long', 'live', 'spiderverse', 'outstanding']",0.6124,positive
+AMAZING!!!,20 December 2018,amazing,['amazing'],0.5859,positive
+Kingpin is the swolest.,20 December 2018,kingpin is the swolest,"['kingpin', 'swolest']",0.0,positive
+PROBABLY THE BEST SPIDER-MAN MOVIE EVER,17 December 2018,probably the best spiderman movie ever,"['probably', 'best', 'spiderman', 'movie', 'ever']",0.6369,positive
+The Spider-Man Movie Sony Needed,19 December 2018,the spiderman movie sony needed,"['spiderman', 'movie', 'sony', 'needed']",0.0,positive
+Spider-Man: Into the Spider-Verse,20 July 2019,spiderman into the spiderverse,"['spiderman', 'spiderverse']",0.0,positive
+Best Spider-man movie yet,15 December 2018,best spiderman movie yet,"['best', 'spiderman', 'movie', 'yet']",0.6369,positive
+Disappointing,15 December 2018,disappointing,['disappointing'],-0.4939,negative
+Simply spectacular!,15 December 2018,simply spectacular,"['simply', 'spectacular']",0.0,positive
+Wow,19 December 2018,wow,['wow'],0.5859,positive
+They proved me wrong,15 December 2018,they proved me wrong,"['proved', 'wrong']",-0.4767,negative
+"Into The Spider Verse isn't just the best Spider-Man movie that nobody asked for - it's one of the best Spider-Man movies ever made, period.",13 December 2018,into the spider verse isnt just the best spiderman movie that nobody asked for  its one of the best spiderman movies ever made period,"['spider', 'verse', 'isnt', 'best', 'spiderman', 'movie', 'nobody', 'asked', 'one', 'best', 'spiderman', 'movie', 'ever', 'made', 'period']",-0.7741,negative
+Not for the average adult,30 March 2019,not for the average adult,"['average', 'adult']",0.0,positive
+WTF?,22 February 2019,wtf,['wtf'],-0.5859,negative
+Insufferable main character,8 December 2019,insufferable main character,"['insufferable', 'main', 'character']",0.0,positive
+not for me -- direction and color gave me a headache,16 July 2019,not for me  direction and color gave me a headache,"['direction', 'color', 'gave', 'headache']",0.0,positive
+Split Personality,16 December 2018,split personality,"['split', 'personality']",0.0,positive
+A Disney Spider-Man that's a little too silly in too many parts for me.,2 July 2019,a disney spiderman thats a little too silly in too many parts for me,"['disney', 'spiderman', 'thats', 'little', 'silly', 'many', 'part']",-0.046,negative
+The best movie of the year and best Spider-Man film,23 December 2018,the best movie of the year and best spiderman film,"['best', 'movie', 'year', 'best', 'spiderman', 'film']",0.8555,positive
+Best super hero movie of 2018,14 December 2018,best super hero movie of 2018,"['best', 'super', 'hero', 'movie', '2018']",0.9136,positive
+"Excellent movie, the movie is make in the same way as the chronicles of Narnia and Monsters INC.",14 December 2018,excellent movie the movie is make in the same way as the chronicles of narnia and monsters inc,"['excellent', 'movie', 'movie', 'make', 'way', 'chronicle', 'narnia', 'monster', 'inc']",0.5719,positive
+Not really feeling it,2 June 2019,not really feeling it,"['really', 'feeling']",-0.1498,negative
+Greatest animated movie of all time!,7 January 2022,greatest animated movie of all time,"['greatest', 'animated', 'movie', 'time']",0.6369,positive
+An Honest Review,29 December 2018,an honest review,"['honest', 'review']",0.5106,positive
+A Spider-Man film like no other.,14 December 2018,a spiderman film like no other,"['spiderman', 'film', 'like']",0.0772,positive
+"Good, average",25 March 2019,good average,"['good', 'average']",0.4404,positive
+Fast-paced creative animation,9 March 2019,fastpaced creative animation,"['fastpaced', 'creative', 'animation']",0.4404,positive
+Spidey always find a way to get back up...!!!,16 December 2018,spidey always find a way to get back up,"['spidey', 'always', 'find', 'way', 'get', 'back']",0.0,positive
+I was really impressed,19 December 2018,i was really impressed,"['really', 'impressed']",0.5256,positive
+Wow!,19 December 2018,wow,['wow'],0.5859,positive
+"GO WATHC IT, YOU WILL LOVE IT",14 December 2018,go wathc it you will love it,"['go', 'wathc', 'love']",0.6369,positive
+This different approach of animation is simply mind blowing,15 December 2018,this different approach of animation is simply mind blowing,"['different', 'approach', 'animation', 'simply', 'mind', 'blowing']",0.0,positive
+High energy animation the mixes things up,24 December 2018,high energy animation the mixes things up,"['high', 'energy', 'animation', 'mix', 'thing']",0.2732,positive
+The Best Superhero Film Of All Time!,16 June 2020,the best superhero film of all time,"['best', 'superhero', 'film', 'time']",0.6369,positive
+Spider-Man Not Special Anymore,2 February 2019,spiderman not special anymore,"['spiderman', 'special', 'anymore']",-0.3089,negative
+The Best Spider-Man Movie Ever Made: and Sony's All-Time Best Animation!,13 December 2018,the best spiderman movie ever made and sonys alltime best animation,"['best', 'spiderman', 'movie', 'ever', 'made', 'sonys', 'alltime', 'best', 'animation']",0.8555,positive
+It was alright,13 April 2019,it was alright,['alright'],0.25,positive
+The Best Spiderman Venture in Years,16 December 2018,the best spiderman venture in years,"['best', 'spiderman', 'venture', 'year']",0.6369,positive
+Blockbuster Entertainment!,27 December 2018,blockbuster entertainment,"['blockbuster', 'entertainment']",0.7717,positive
+Smiles from home.,18 December 2018,smiles from home,"['smile', 'home']",0.4767,positive
+Into the Spider-Verse: Take a Leap of Faith,24 December 2018,into the spiderverse take a leap of faith,"['spiderverse', 'take', 'leap', 'faith']",0.4215,positive
+One of the best animated releases this year.,23 December 2018,one of the best animated releases this year,"['one', 'best', 'animated', 'release', 'year']",0.6369,positive
+The best Spider-Man movie yet!,15 December 2018,the best spiderman movie yet,"['best', 'spiderman', 'movie', 'yet']",0.6369,positive
+Extraordinary!,6 December 2018,extraordinary,['extraordinary'],0.0,positive
+Spider-Man meets The Lego Movie,6 December 2018,spiderman meets the lego movie,"['spiderman', 'meet', 'lego', 'movie']",0.0,positive
+"Fun watch pretty much, even it misses real emotion and significant depth",1 July 2019,fun watch pretty much even it misses real emotion and significant depth,"['fun', 'watch', 'pretty', 'much', 'even', 'miss', 'real', 'emotion', 'significant', 'depth']",0.7506,positive
+We are all Spider-man,5 March 2019,we are all spiderman,['spiderman'],0.0,positive
+An amazing and mind-blowing animated movie.,18 December 2018,an amazing and mindblowing animated movie,"['amazing', 'mindblowing', 'animated', 'movie']",0.5859,positive
+JUST GO SEE IT.,17 December 2018,just go see it,"['go', 'see']",0.0,positive
+The coolest Spiderman Ever!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!,23 February 2019,the coolest spiderman ever,"['coolest', 'spiderman', 'ever']",0.0,positive
+Best Spider-Man movie of all time!!,19 December 2018,best spiderman movie of all time,"['best', 'spiderman', 'movie', 'time']",0.6369,positive
+We need a sequel!!,22 December 2018,we need a sequel,"['need', 'sequel']",0.0,positive
+Best movie of 2018 hands down,22 December 2018,best movie of 2018 hands down,"['best', 'movie', '2018', 'hand']",0.6369,positive
+Spider-Man: Into the Spider-Verse - Cinema with CJ Review,6 December 2018,spiderman into the spiderverse  cinema with cj review,"['spiderman', 'spiderverse', 'cinema', 'cj', 'review']",0.0,positive
+As good as any movie I've ever seen.,14 December 2018,as good as any movie ive ever seen,"['good', 'movie', 'ive', 'ever', 'seen']",0.4404,positive
+Best Spiderman movie.,14 December 2018,best spiderman movie,"['best', 'spiderman', 'movie']",0.6369,positive
+THE BEST ANIMATED FILM OF 2018 & THE BEST SPIDEY MOVIE,23 February 2019,the best animated film of 2018  the best spidey movie,"['best', 'animated', 'film', '2018', 'best', 'spidey', 'movie']",0.8555,positive
+Best spiderman film yet!,14 December 2018,best spiderman film yet,"['best', 'spiderman', 'film', 'yet']",0.6369,positive
+"No, it's not over-hyped, it is that good.",17 December 2018,no its not overhyped it is that good,"['overhyped', 'good']",0.1779,positive
+"""There is only one Spider-Man, and I'm it""... Stupendously great fun",24 December 2018,there is only one spiderman and im it stupendously great fun,"['one', 'spiderman', 'im', 'stupendously', 'great', 'fun']",0.8126,positive
+Amazing,21 December 2018,amazing,['amazing'],0.5859,positive
+"Simply Amazing IMAX 3D, Art and imagination!",24 December 2018,simply amazing imax 3d art and imagination,"['simply', 'amazing', 'imax', '3d', 'art', 'imagination']",0.5859,positive
+An entertaing breath of fresh air from beginning to end,24 December 2018,an entertaing breath of fresh air from beginning to end,"['entertaing', 'breath', 'fresh', 'air', 'beginning', 'end']",0.3182,positive
+WOW!!,19 December 2018,wow,['wow'],0.5859,positive
+Amazing visuals. Spectacularly ponderous storytelling,12 February 2020,amazing visuals spectacularly ponderous storytelling,"['amazing', 'visuals', 'spectacularly', 'ponderous', 'storytelling']",0.5859,positive
+Best Spiderman movie yet hands down!,6 December 2018,best spiderman movie yet hands down,"['best', 'spiderman', 'movie', 'yet', 'hand']",0.6369,positive
+"Nicholas Cage is in the movie, and he doesn't ruin it? WAAAAAA?",2 September 2019,nicholas cage is in the movie and he doesnt ruin it waaaaaa,"['nicholas', 'cage', 'movie', 'doesnt', 'ruin', 'waaaaaa']",0.4717,positive
+"Aesthetically Impressive, but Nothing More Than Another Origin Story",28 August 2019,aesthetically impressive but nothing more than another origin story,"['aesthetically', 'impressive', 'nothing', 'another', 'origin', 'story']",0.2846,positive
+Incredible!!!,13 December 2018,incredible,['incredible'],0.0,positive
+Animation at its best👏🏼👏🏼👏🏼,23 December 2018,animation at its best,"['animation', 'best']",0.6369,positive
+I was a skeptic,24 December 2018,i was a skeptic,['skeptic'],-0.2263,negative
+THE BEST SPIDERMAN FILM EVER!,6 December 2018,the best spiderman film ever,"['best', 'spiderman', 'film', 'ever']",0.6369,positive
+I didn't care for it... but maybe I am missing something.,9 December 2019,i didnt care for it but maybe i am missing something,"['didnt', 'care', 'maybe', 'missing', 'something']",-0.5594,negative
+Did we all watch the same film here???,2 May 2019,did we all watch the same film here,"['watch', 'film']",0.0,positive
+Exactly what fans anticipated from a spider-man movie,14 December 2018,exactly what fans anticipated from a spiderman movie,"['exactly', 'fan', 'anticipated', 'spiderman', 'movie']",0.0,positive
+"Just awful, a meandering mess led by an unlikable Miles Morales",19 December 2018,just awful a meandering mess led by an unlikable miles morales,"['awful', 'meandering', 'mess', 'led', 'unlikable', 'mile', 'morale']",-0.6705,negative
+"Yup, definitely a game changer movie.",18 December 2018,yup definitely a game changer movie,"['yup', 'definitely', 'game', 'changer', 'movie']",0.4019,positive
+Incredible movie,19 December 2018,incredible movie,"['incredible', 'movie']",0.0,positive
+The Best Spiderman Movie Ever,18 December 2018,the best spiderman movie ever,"['best', 'spiderman', 'movie', 'ever']",0.6369,positive
+"My expectations were high for this film, it managed to exceed them.",18 December 2018,my expectations were high for this film it managed to exceed them,"['expectation', 'high', 'film', 'managed', 'exceed']",0.0,positive
+Speechless!!!!,19 December 2018,speechless,['speechless'],0.0,positive
+Mediocre story with creative visuals,22 March 2019,mediocre story with creative visuals,"['mediocre', 'story', 'creative', 'visuals']",0.4404,positive
+An Incredible Masterpiece,14 December 2018,an incredible masterpiece,"['incredible', 'masterpiece']",0.6249,positive
+Amazing animation and a spectacular story; pretty much the ultimate Spider-Man picture.,16 December 2018,amazing animation and a spectacular story pretty much the ultimate spiderman picture,"['amazing', 'animation', 'spectacular', 'story', 'pretty', 'much', 'ultimate', 'spiderman', 'picture']",0.7906,positive
+One Of The Best Marvel Films!,16 December 2018,one of the best marvel films,"['one', 'best', 'marvel', 'film']",0.7906,positive
+"Perfect, hits all the right buttons.",16 December 2018,perfect hits all the right buttons,"['perfect', 'hit', 'right', 'button']",0.5719,positive
+Wow,17 December 2018,wow,['wow'],0.5859,positive
+This was a wonderful surprise!,19 December 2018,this was a wonderful surprise,"['wonderful', 'surprise']",0.7003,positive
+One of the best films of 2018.,17 December 2018,one of the best films of 2018,"['one', 'best', 'film', '2018']",0.6369,positive
+I give it 10/10 only because the highest score is 10,24 December 2018,i give it 1010 only because the highest score is 10,"['give', '1010', 'highest', 'score', '10']",0.0,positive
+"Spider thing-in to a multi-verse of Dismaland ""He can be invisable if he is black""",9 August 2019,spider thingin to a multiverse of dismaland he can be invisable if he is black,"['spider', 'thingin', 'multiverse', 'dismaland', 'invisable', 'black']",0.0,positive
+Highly overrated,20 February 2020,highly overrated,"['highly', 'overrated']",0.0,positive
+A movie for movie lovers,14 December 2018,a movie for movie lovers,"['movie', 'movie', 'lover']",0.5267,positive
+7.5/10. Recommended,2 December 2023,7510 recommended,"['7510', 'recommended']",0.2023,positive
+One of the most creative and original movies I've seen,16 December 2018,one of the most creative and original movies ive seen,"['one', 'creative', 'original', 'movie', 'ive', 'seen']",0.6962,positive
+Superb animated movie,12 December 2018,superb animated movie,"['superb', 'animated', 'movie']",0.6249,positive
+"Good start, but then...",16 January 2021,good start but then,"['good', 'start']",0.2382,positive
+Easily my favorite of the animated superhero movies I've seen,15 December 2018,easily my favorite of the animated superhero movies ive seen,"['easily', 'favorite', 'animated', 'superhero', 'movie', 'ive', 'seen']",0.6597,positive
+Too Much Action,20 February 2019,too much action,"['much', 'action']",0.0,positive
+All I ever wanted,22 December 2018,all i ever wanted,"['ever', 'wanted']",0.0,positive
+The Spider-Man Sony got right!,18 December 2018,the spiderman sony got right,"['spiderman', 'sony', 'got', 'right']",0.0,positive
+"A film for all peoples, except the Epileptic",21 December 2018,a film for all peoples except the epileptic,"['film', 'people', 'except', 'epileptic']",0.0,positive
+Perfect movie for everybody,15 December 2018,perfect movie for everybody,"['perfect', 'movie', 'everybody']",0.5719,positive
+"So, this was all the hyper hype? Really?",29 December 2018,so this was all the hyper hype really,"['hyper', 'hype', 'really']",0.0,positive
+Nicely animated but totally overhyped,11 March 2019,nicely animated but totally overhyped,"['nicely', 'animated', 'totally', 'overhyped']",0.2382,positive
+Spellbinding,6 December 2018,spellbinding,['spellbinding'],0.0,positive
+Over-Hyped,16 December 2018,overhyped,['overhyped'],0.0,positive
+Spider's nest,20 November 2021,spiders nest,"['spider', 'nest']",0.0,positive
+Best spider-man movie and you can't change my mind,25 April 2021,best spiderman movie and you cant change my mind,"['best', 'spiderman', 'movie', 'cant', 'change', 'mind']",0.6369,positive
+The best Spider-Man movie ever made?,13 December 2018,the best spiderman movie ever made,"['best', 'spiderman', 'movie', 'ever', 'made']",0.6369,positive
+Finally pushing Spiderman boundries,20 December 2018,finally pushing spiderman boundries,"['finally', 'pushing', 'spiderman', 'boundries']",0.0,positive
+A very comical/artistic movie,24 December 2018,a very comicalartistic movie,"['comicalartistic', 'movie']",0.0,positive
+Nuff Said...,14 December 2018,nuff said,"['nuff', 'said']",0.0,positive
+Better than Spiderman 2,16 December 2018,better than spiderman 2,"['better', 'spiderman', '2']",0.4404,positive
+Overrated!,27 December 2021,overrated,['overrated'],0.0,positive
+Ugh - Bendis,17 December 2018,ugh  bendis,"['ugh', 'bendis']",-0.4215,negative
+Great Animation but too hectic,13 January 2021,great animation but too hectic,"['great', 'animation', 'hectic']",0.3716,positive
+Wow,21 December 2018,wow,['wow'],0.5859,positive
+The Best Animated Movie in Recent Years,15 December 2018,the best animated movie in recent years,"['best', 'animated', 'movie', 'recent', 'year']",0.6369,positive
+"Mediocre Spider-Man film, outstanding animation",28 November 2021,mediocre spiderman film outstanding animation,"['mediocre', 'spiderman', 'film', 'outstanding', 'animation']",0.6124,positive
+My favorite Spider-Man movie of all time,19 December 2018,my favorite spiderman movie of all time,"['favorite', 'spiderman', 'movie', 'time']",0.4588,positive
+Certainly Overhyped and Not Great but Also Not Trash,12 January 2020,certainly overhyped and not great but also not trash,"['certainly', 'overhyped', 'great', 'also', 'trash']",-0.1147,negative
+THE WORST SPIDERMAN FILM OF THEM ALL,23 December 2020,the worst spiderman film of them all,"['worst', 'spiderman', 'film']",-0.6249,negative
+Great movie,17 December 2018,great movie,"['great', 'movie']",0.6249,positive
+Not feeling it,1 September 2019,not feeling it,['feeling'],-0.0951,negative
+New life into spiderman and a cool ride but some double vision issues,17 December 2018,new life into spiderman and a cool ride but some double vision issues,"['new', 'life', 'spiderman', 'cool', 'ride', 'double', 'vision', 'issue']",0.4854,positive
+Good efects. Totally Overrated,23 August 2020,good efects totally overrated,"['good', 'efects', 'totally', 'overrated']",0.4404,positive
+Amazining animation-great story-,6 December 2018,amazining animationgreat story,"['amazining', 'animationgreat', 'story']",0.0,positive
+A non-superhero fan's view.,18 December 2018,a nonsuperhero fans view,"['nonsuperhero', 'fan', 'view']",0.0,positive
+Sony's Redemption,20 December 2018,sonys redemption,"['sonys', 'redemption']",0.0,positive
+Visually stunning. The best Spidey so far.,3 January 2019,visually stunning the best spidey so far,"['visually', 'stunning', 'best', 'spidey', 'far']",0.7783,positive
+Sony I almost forgive you for 'The Amazing Spiderman',14 December 2018,sony i almost forgive you for the amazing spiderman,"['sony', 'almost', 'forgive', 'amazing', 'spiderman']",0.6815,positive
+This Spider-man was Amazing,20 December 2018,this spiderman was amazing,"['spiderman', 'amazing']",0.5859,positive
+An animation masterpiece,16 October 2022,an animation masterpiece,"['animation', 'masterpiece']",0.6249,positive
+More one for the comic book enthusiasts,25 January 2019,more one for the comic book enthusiasts,"['one', 'comic', 'book', 'enthusiast']",0.34,positive
+"""Anyone can wear the mask.""",20 September 2023,anyone can wear the mask,"['anyone', 'wear', 'mask']",0.0,positive
+It's a GREAT film,14 December 2018,its a great film,"['great', 'film']",0.6249,positive
+Into The SpiderVerse,15 December 2018,into the spiderverse,['spiderverse'],0.0,positive
+A Darkhorse Candidate for My Favourite Movie of the Year,23 December 2018,a darkhorse candidate for my favourite movie of the year,"['darkhorse', 'candidate', 'favourite', 'movie', 'year']",0.0,positive
+Can't get much better,19 December 2018,cant get much better,"['cant', 'get', 'much', 'better']",-0.3412,negative
+Visually stunning,21 February 2019,visually stunning,"['visually', 'stunning']",0.3818,positive
+FANTASTIC. PHENOMINAL,21 December 2018,fantastic phenominal,"['fantastic', 'phenominal']",0.5574,positive
+The comic style is cool!,26 December 2018,the comic style is cool,"['comic', 'style', 'cool']",0.3182,positive
+A TRUE comic-book action adventure!,15 December 2018,a true comicbook action adventure,"['true', 'comicbook', 'action', 'adventure']",0.6249,positive
+Animation as an art form.,19 October 2020,animation as an art form,"['animation', 'art', 'form']",0.0,positive
+Lives up to the HYPE!,15 December 2018,lives up to the hype,"['life', 'hype']",0.0,positive
+One of the biggest film of the year,17 December 2018,one of the biggest film of the year,"['one', 'biggest', 'film', 'year']",0.0,positive
+So refreshing!,19 December 2018,so refreshing,['refreshing'],0.0,positive
+Absolutely fantastic,16 December 2018,absolutely fantastic,"['absolutely', 'fantastic']",0.5984,positive
+"Overflowing with wit, verve and inventiveness, this latest Spider-Man reboot expands the Spider-Verse in visually dazzling and hilariously self-referential ways",7 December 2018,overflowing with wit verve and inventiveness this latest spiderman reboot expands the spiderverse in visually dazzling and hilariously selfreferential ways,"['overflowing', 'wit', 'verve', 'inventiveness', 'latest', 'spiderman', 'reboot', 'expands', 'spiderverse', 'visually', 'dazzling', 'hilariously', 'selfreferential', 'way']",0.1027,positive
+Absolutely everything one would want from an animated Spider-Man movie,13 December 2018,absolutely everything one would want from an animated spiderman movie,"['absolutely', 'everything', 'one', 'would', 'want', 'animated', 'spiderman', 'movie']",0.0772,positive
+Awesome,20 December 2018,awesome,['awesome'],0.6249,positive
+Beautiful animation!,12 December 2018,beautiful animation,"['beautiful', 'animation']",0.5994,positive
+Shattered my expectations!!,14 December 2018,shattered my expectations,"['shattered', 'expectation']",-0.4767,negative
+"Amazing, Spectacular, Incredible, Just, BEAUTIFUL",21 December 2018,amazing spectacular incredible just beautiful,"['amazing', 'spectacular', 'incredible', 'beautiful']",0.8271,positive
+Spider-Man: Into the Spider-Verse,24 October 2022,spiderman into the spiderverse,"['spiderman', 'spiderverse']",0.0,positive
+Finally Sony give me hope,26 December 2018,finally sony give me hope,"['finally', 'sony', 'give', 'hope']",0.4404,positive
+Awesome,17 December 2018,awesome,['awesome'],0.6249,positive
+This is the best thing out there right now.,21 December 2018,this is the best thing out there right now,"['best', 'thing', 'right']",0.6369,positive
+The best movie of the whole year!,27 December 2018,the best movie of the whole year,"['best', 'movie', 'whole', 'year']",0.6369,positive
+From Multiple Enemies to Multiple Heroes.,20 December 2018,from multiple enemies to multiple heroes,"['multiple', 'enemy', 'multiple', 'hero']",0.0258,positive
+"Puts the ""Amazing"" back into ""Spider-Man""",16 December 2018,puts the amazing back into spiderman,"['put', 'amazing', 'back', 'spiderman']",0.5859,positive
+Absolutely amazing Spider-Man!,12 December 2018,absolutely amazing spiderman,"['absolutely', 'amazing', 'spiderman']",0.624,positive
+My Least favourite Spider-Man movie. Definitely NOT what the critics led me to believe.,12 December 2018,my least favourite spiderman movie definitely not what the critics led me to believe,"['least', 'favourite', 'spiderman', 'movie', 'definitely', 'critic', 'led', 'believe']",0.5556,positive
+Yikes,22 December 2018,yikes,['yikes'],0.0,positive
+For whom was this movie made?,18 January 2019,for whom was this movie made,"['movie', 'made']",0.0,positive
+"The most impressive animation this year, and a feast for comics fans !!",24 December 2018,the most impressive animation this year and a feast for comics fans ,"['impressive', 'animation', 'year', 'feast', 'comic', 'fan']",0.5563,positive
+The pig was too much,5 August 2019,the pig was too much,"['pig', 'much']",0.0,positive
+"With lots of heart, some of the action sequences and compelling characters, Spiderman: Into The Spider-Verse is Sony Pictures Animation's finest achievement!",26 December 2018,with lots of heart some of the action sequences and compelling characters spiderman into the spiderverse is sony pictures animations finest achievement,"['lot', 'heart', 'action', 'sequence', 'compelling', 'character', 'spiderman', 'spiderverse', 'sony', 'picture', 'animation', 'finest', 'achievement']",0.2263,positive
+It was so-so,16 March 2019,it was soso,['soso'],0.0,positive
+"Into The Spider-Verse crawls, swings and glitches its way in becoming the best Spider-Man adaptation.",16 December 2018,into the spiderverse crawls swings and glitches its way in becoming the best spiderman adaptation,"['spiderverse', 'crawl', 'swing', 'glitch', 'way', 'becoming', 'best', 'spiderman', 'adaptation']",0.6369,positive
+"Spider-Man, Spider-Man, Does whatever a spider can!",16 December 2018,spiderman spiderman does whatever a spider can,"['spiderman', 'spiderman', 'whatever', 'spider']",0.0,positive
+!!!,20 December 2018,,[],0.0,positive
+Super fun,15 December 2018,super fun,"['super', 'fun']",0.802,positive
+"If there exist infinite dimensions, this would still be cool in all of them",30 April 2019,if there exist infinite dimensions this would still be cool in all of them,"['exist', 'infinite', 'dimension', 'would', 'still', 'cool']",0.3182,positive
+Best Animated Marvel Movie after Big Hero 6!!!,20 December 2018,best animated marvel movie after big hero 6,"['best', 'animated', 'marvel', 'movie', 'big', 'hero', '6']",0.891,positive
+Incredible animation and a well executed story,19 December 2018,incredible animation and a well executed story,"['incredible', 'animation', 'well', 'executed', 'story']",0.2732,positive
+Stan Lee would be proud,16 February 2019,stan lee would be proud,"['stan', 'lee', 'would', 'proud']",0.4767,positive
+"It's the best Spidey film and dare I say it, the best MCU film of the year! Go see it!",2 January 2019,its the best spidey film and dare i say it the best mcu film of the year go see it,"['best', 'spidey', 'film', 'dare', 'say', 'best', 'mcu', 'film', 'year', 'go', 'see']",0.8555,positive
+Best Spiderman movie ever,15 December 2018,best spiderman movie ever,"['best', 'spiderman', 'movie', 'ever']",0.6369,positive
+Boring and Dull,3 May 2019,boring and dull,"['boring', 'dull']",-0.6124,negative
+Cool movie + cool soundtrack,16 December 2018,cool movie  cool soundtrack,"['cool', 'movie', 'cool', 'soundtrack']",0.5574,positive
+"A tale of food, relationships and mad science",26 September 2021,a tale of food relationships and mad science,"['tale', 'food', 'relationship', 'mad', 'science']",-0.4939,negative
+Not sure what the point was...,28 January 2019,not sure what the point was,"['sure', 'point']",-0.2411,negative
+Quirky but Good,30 December 2018,quirky but good,"['quirky', 'good']",0.5927,positive
+It's like watching a comic book come to life.,16 December 2018,its like watching a comic book come to life,"['like', 'watching', 'comic', 'book', 'come', 'life']",0.3612,positive
+Best Spider-man movie ever,27 August 2019,best spiderman movie ever,"['best', 'spiderman', 'movie', 'ever']",0.6369,positive

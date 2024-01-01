@@ -36,6 +36,7 @@ import requests
 def scrape_imdb_reviews(movie_url, no_of_pages):
     global movie_name
     global my_bar
+    
     # Set up ChromeOptions for headless browsing
     chrome_options = Options()
     chrome_options.add_argument("--headless")
@@ -50,7 +51,7 @@ def scrape_imdb_reviews(movie_url, no_of_pages):
         driver.get(movie_url)
 
         # Extracting movie name
-        movie_element = driver.find_element(By.CSS_SELECTOR, "h3[itemprop='name'] a")
+        movie_element = driver.find_element(By.CSS_SELECTOR, "a[itemprop='url']")
         movie_name = movie_element.text.strip()
 
         # Print the movie name 
@@ -79,15 +80,24 @@ def scrape_imdb_reviews(movie_url, no_of_pages):
             except NoSuchElementException:
                 # Break the loop when the "load more" button is not found
                 break
+            except KeyError:
+                break
             
 
         # Extracting review text after all "load more" clicks
         soup = BeautifulSoup(driver.page_source, "html.parser")
-        reviews = [
-            {"text": review_div.get_text(strip=True)}
-            for review_div in soup.find_all("a", class_="title")
-        ]
-        
+        reviews = []
+
+        review_divs = soup.find_all("a", class_="title")
+        date_divs = soup.find_all("span", class_="review-date")
+
+        for review_div, date_div in zip(review_divs, date_divs):
+            review_text = review_div.get_text(strip=True)
+            review_date = date_div.get_text(strip=True)
+            
+            review = {"text": review_text, "date": review_date}
+            reviews.append(review)
+
         my_bar.empty()
 
         return reviews
@@ -124,10 +134,10 @@ def lemmatize_text(tokens):
     lemmatizer = WordNetLemmatizer()
     return [lemmatizer.lemmatize(token) for token in tokens]
 
-
 # Function to perform sentiment analysis
 def perform_sentiment_analysis(movie_code, num_of_pages):
     # IMDb movie URL
+    # movie_url = f"https://www.imdb.com/title/{movie_code}/reviews?sort=submissionDate&dir=desc&ratingFilter=0"
     movie_url = f"https://www.imdb.com/title/{movie_code}/reviews"
 
     # Scrape IMDb movie reviews
@@ -136,64 +146,79 @@ def perform_sentiment_analysis(movie_code, num_of_pages):
     # Convert the list of dictionaries to a DataFrame
     df = pd.DataFrame(movie_reviews)
 
-    # Data Preprocessing
-    df["text_cleaned"] = df["text"].apply(clean_text)
-    df["tokens"] = df["text_cleaned"].apply(tokenize_text)
-    df["tokens"] = df["tokens"].apply(remove_stopwords)
-    df["tokens"] = df["tokens"].apply(lemmatize_text)
+    if not df.empty:
+        # Data Preprocessing
+        df["text_cleaned"] = df["text"].apply(clean_text)
+        df["tokens"] = df["text_cleaned"].apply(tokenize_text)
+        df["tokens"] = df["tokens"].apply(remove_stopwords)
+        df["tokens"] = df["tokens"].apply(lemmatize_text)
 
-    # Sentiment Analysis using VADER
-    vader = SentimentIntensityAnalyzer()
-    df["compound"] = df["text_cleaned"].apply(
-        lambda x: vader.polarity_scores(x)["compound"]
-    )
+        # Sentiment Analysis using VADER
+        vader = SentimentIntensityAnalyzer()
+        df["compound"] = df["text_cleaned"].apply(
+            lambda x: vader.polarity_scores(x)["compound"]
+        )
 
-    # Classify sentiments based on compound score
-    df["predicted_sentiment"] = df["compound"].apply(
-        lambda x: "positive" if x >= 0 else "negative"
-    )
+        # Classify sentiments based on compound score
+        df["predicted_sentiment"] = df["compound"].apply(
+            lambda x: "positive" if x >= 0 else "negative"
+        )
+    else:
+        st.warning("No reviews found. Unable to perform sentiment analysis.")
+        return
 
     # Save results to CSV
     save_path = "results"
-    df.to_csv(
-        os.path.join(save_path, f"movie_reviews_with_sentiment_for_{movie_code}.csv"),
-        index=False,
-    )
+    df.to_csv(os.path.join(save_path, f"movie_reviews_with_sentiment_for_{movie_code}.csv"), index=False)
+
+    st.subheader(f"Movie Name: {movie_name}")
+
+    # Create a new column for the review date as a datetime object
+    df["review_date"] = pd.to_datetime(df["date"], errors='coerce')
+
+    # Filter the data to include only reviews from 2018 or 2019
+    df_filtered = df[(df["review_date"].dt.year == 2018) | (df["review_date"].dt.year == 2019)]
+
+    # Create a line graph showing the number of positive and negative reviews over time
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 12))
+
+    df_filtered.groupby([df_filtered["review_date"].dt.date, "predicted_sentiment"]).size().unstack().plot(kind='line', ax=ax1)
+    ax1.set_title(f"Number of Positive and Negative Reviews Over Time ({movie_code})")
+    ax1.set_xlabel("Review Date")
+    ax1.set_ylabel("Number of Reviews")
 
     # Visualize the distribution of predicted sentiments
     colors = [
         "green" if col.lower() == "positive" else "red"
-        for col in df["predicted_sentiment"].value_counts().index
+        for col in df_filtered["predicted_sentiment"].value_counts().index
     ]
-    fig, ax = plt.subplots(figsize=(6, 4))
-    df["predicted_sentiment"].value_counts().plot(kind="bar", color=colors, ax=ax)
-    ax.set_title(f"Distribution of Predicted Sentiments in IMDb Reviews ({movie_code})")
-    ax.set_xlabel("Predicted Sentiment")
-    ax.set_ylabel("Count")
+
+    df_filtered["predicted_sentiment"].value_counts().plot(kind="bar", color=colors, ax=ax2)
+    ax2.set_title(f"Distribution of Predicted Sentiments in IMDb Reviews ({movie_code})")
+    ax2.set_xlabel("Predicted Sentiment")
+    ax2.set_ylabel("Count")
+
     plt.tight_layout()
 
-    # Save the plot to a file
-    plot_file_path = os.path.join(
-        save_path, f"sentiment_distribution_for_{movie_code}.png"
-    )
+
+    # Save the plot to files
+    plot_file_path = os.path.join(save_path, f"sentiment_analysis_for_{movie_code}.png")
     plt.savefig(plot_file_path)
+
+    # Display the combined plot
+    st.image(
+        plot_file_path,
+        caption=f"Sentiment Analysis for IMDb Reviews ({movie_code})",
+        use_column_width=True,
+    )
 
     # Display a message indicating positive sentiment
     more_counts = df["predicted_sentiment"].value_counts().index
-    positive_message = (
-        "The movie has positive reviews! You should consider watching it."
-    )
+    positive_message = "The movie has positive reviews! You should consider watching it."
     negative_message = "The sentiment analysis did not identify a clear positive sentiment in the reviews."
 
-    st.title("IMDb Movie Reviews Sentiment Analysis")
-    st.subheader(f"Movie Name: {movie_name}")
-    st.image(
-        plot_file_path,
-        caption=f"Distribution of Predicted Sentiments in IMDb Reviews ({movie_code})",
-        use_column_width=True,
-    )
     st.subheader("Sentiment Analysis Results:")
-    st.write(df[["text", "predicted_sentiment"]])
+    st.write(df[["text", "predicted_sentiment", "review_date"]])
     st.subheader("Sentiment Overview:")
     if "positive" == more_counts[0]:
         st.success(positive_message)

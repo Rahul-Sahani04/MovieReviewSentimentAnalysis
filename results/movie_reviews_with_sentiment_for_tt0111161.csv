@@ -1,275 +1,151 @@
-text,text_cleaned,tokens,compound,predicted_sentiment
-Some birds aren't meant to be caged.,some birds arent meant to be caged,"['bird', 'arent', 'meant', 'caged']",0.0,positive
-An incredible movie. One that lives with you.,an incredible movie one that lives with you,"['incredible', 'movie', 'one', 'life']",0.0,positive
-Don't Rent Shawshank.,dont rent shawshank,"['dont', 'rent', 'shawshank']",0.0,positive
-This is How Movies Should Be Made,this is how movies should be made,"['movie', 'made']",0.0,positive
-the shawshank redemption,the shawshank redemption,"['shawshank', 'redemption']",0.0,positive
-A classic piece of unforgettable film-making.,a classic piece of unforgettable filmmaking,"['classic', 'piece', 'unforgettable', 'filmmaking']",0.0,positive
-The Shawshank Redemption,the shawshank redemption,"['shawshank', 'redemption']",0.0,positive
-Stephen King's best adapted movie,stephen kings best adapted movie,"['stephen', 'king', 'best', 'adapted', 'movie']",0.6369,positive
-"Enthralling, fantastic, intriguing, truly remarkable!",enthralling fantastic intriguing truly remarkable,"['enthralling', 'fantastic', 'intriguing', 'truly', 'remarkable']",0.8779,positive
-Eternal Hope,eternal hope,"['eternal', 'hope']",0.4404,positive
-IMDb and the Greatest Film of All Time,imdb and the greatest film of all time,"['imdb', 'greatest', 'film', 'time']",0.6369,positive
-All-time prison film classic,alltime prison film classic,"['alltime', 'prison', 'film', 'classic']",-0.5106,negative
-My favorite movie of all time.,my favorite movie of all time,"['favorite', 'movie', 'time']",0.4588,positive
-"""I'm a convicted murderer who provides sound financial planning"".",im a convicted murderer who provides sound financial planning,"['im', 'convicted', 'murderer', 'provides', 'sound', 'financial', 'planning']",-0.6808,negative
-Simply the best,simply the best,"['simply', 'best']",0.6369,positive
-"Simply known as ""The Movie""",simply known as the movie,"['simply', 'known', 'movie']",0.0,positive
-Simply amazing. The best film of the 90's.,simply amazing the best film of the 90s,"['simply', 'amazing', 'best', 'film', '90']",0.8402,positive
-Prepare to be moved,prepare to be moved,"['prepare', 'moved']",0.0,positive
-"""I Had To Go To Prison To Learn To Be A Crook""",i had to go to prison to learn to be a crook,"['go', 'prison', 'learn', 'crook']",-0.5106,negative
-Shawshank Redeems Hollywood,shawshank redeems hollywood,"['shawshank', 'redeems', 'hollywood']",0.0,positive
-Masterpiece,masterpiece,['masterpiece'],0.6249,positive
-never give up hope,never give up hope,"['never', 'give', 'hope']",-0.3412,negative
-Powerful Masterpiece,powerful masterpiece,"['powerful', 'masterpiece']",0.7845,positive
-Hope can set you free and so can this remarkable film,hope can set you free and so can this remarkable film,"['hope', 'set', 'free', 'remarkable', 'film']",0.8952,positive
-A movie about an innocent clever man who learns to live within prison walls.,a movie about an innocent clever man who learns to live within prison walls,"['movie', 'innocent', 'clever', 'man', 'learns', 'live', 'within', 'prison', 'wall']",0.2732,positive
-Two movies in one,two movies in one,"['two', 'movie', 'one']",0.0,positive
-Shawshank Redemption- Prison Film is Redeemed by Quality ****,shawshank redemption prison film is redeemed by quality ,"['shawshank', 'redemption', 'prison', 'film', 'redeemed', 'quality']",-0.25,negative
-From my favorite movies..,from my favorite movies,"['favorite', 'movie']",0.4588,positive
-The Greatest Movie of all Time,the greatest movie of all time,"['greatest', 'movie', 'time']",0.6369,positive
-Busy dying or busy living?,busy dying or busy living,"['busy', 'dying', 'busy', 'living']",0.0,positive
-impressive,impressive,['impressive'],0.5106,positive
-A classic,a classic,['classic'],0.0,positive
-Good for the spirit,good for the spirit,"['good', 'spirit']",0.5574,positive
-The best story ever told on film,the best story ever told on film,"['best', 'story', 'ever', 'told', 'film']",0.6369,positive
-The absolute GREATEST movie of all time.,the absolute greatest movie of all time,"['absolute', 'greatest', 'movie', 'time']",0.6369,positive
-The closest thing to poetic perfection Hollywood has ever produced,the closest thing to poetic perfection hollywood has ever produced,"['closest', 'thing', 'poetic', 'perfection', 'hollywood', 'ever', 'produced']",0.5719,positive
-An extraordinary and unforgettable film about a bank veep who is convicted of murders and sentenced to the toughest prison,an extraordinary and unforgettable film about a bank veep who is convicted of murders and sentenced to the toughest prison,"['extraordinary', 'unforgettable', 'film', 'bank', 'veep', 'convicted', 'murder', 'sentenced', 'toughest', 'prison']",-0.8271,negative
-Sublimely powerful.,sublimely powerful,"['sublimely', 'powerful']",0.4215,positive
-"Great story, wondrously told and acted",great story wondrously told and acted,"['great', 'story', 'wondrously', 'told', 'acted']",0.6249,positive
-"When There is Life, There is Hope; When There is Hope, There is Life",when there is life there is hope when there is hope there is life,"['life', 'hope', 'hope', 'life']",0.7003,positive
-One of my favourites...,one of my favourites,"['one', 'favourite']",0.0,positive
-Compensatory Incarceration...,compensatory incarceration,"['compensatory', 'incarceration']",0.0,positive
-Masterpiece,masterpiece,['masterpiece'],0.6249,positive
-One of the most powerful movies I've ever watched,one of the most powerful movies ive ever watched,"['one', 'powerful', 'movie', 'ive', 'ever', 'watched']",0.4754,positive
-Compelling masterpiece,compelling masterpiece,"['compelling', 'masterpiece']",0.7184,positive
-life changing,life changing,"['life', 'changing']",0.0,positive
-"An astonishing tale of endurance, courage, life, and perspective..",an astonishing tale of endurance courage life and perspective,"['astonishing', 'tale', 'endurance', 'courage', 'life', 'perspective']",0.4939,positive
-Best movie of all time!,best movie of all time,"['best', 'movie', 'time']",0.6369,positive
-i swear,i swear,['swear'],-0.0516,negative
-Why can't they make films like this anymore?,why cant they make films like this anymore,"['cant', 'make', 'film', 'like', 'anymore']",0.3612,positive
-Hope is everything,hope is everything,"['hope', 'everything']",0.4404,positive
-This is one of the most inspiring n one of the greatest film.,this is one of the most inspiring n one of the greatest film,"['one', 'inspiring', 'n', 'one', 'greatest', 'film']",0.807,positive
-Hope is a Good Thing. Maybe the Best of Things. And No Good Thing Ever Dies.,hope is a good thing maybe the best of things and no good thing ever dies,"['hope', 'good', 'thing', 'maybe', 'best', 'thing', 'good', 'thing', 'ever', 'dy']",0.8934,positive
-"""I have to remind myself that some birds aren't meant to be caged""",i have to remind myself that some birds arent meant to be caged,"['remind', 'bird', 'arent', 'meant', 'caged']",0.0,positive
-its an excellent piece of art,its an excellent piece of art,"['excellent', 'piece', 'art']",0.5719,positive
-Classic,classic,['classic'],0.0,positive
-Simply Wonderful,simply wonderful,"['simply', 'wonderful']",0.5719,positive
-One of the Best If You Get It,one of the best if you get it,"['one', 'best', 'get']",0.6369,positive
-Number two? Fine by me **** (out of ****),number two fine by me  out of ,"['number', 'two', 'fine']",0.2732,positive
-Simply a great story that is moving and uplifting,simply a great story that is moving and uplifting,"['simply', 'great', 'story', 'moving', 'uplifting']",0.6249,positive
-A Sort of Secular Redemption,a sort of secular redemption,"['sort', 'secular', 'redemption']",0.0,positive
-Hope Springs Eternal:Rita Hayworth And The Shawshank Redemption.,hope springs eternalrita hayworth and the shawshank redemption,"['hope', 'spring', 'eternalrita', 'hayworth', 'shawshank', 'redemption']",0.4404,positive
-Salvation lies within....,salvation lies within,"['salvation', 'lie', 'within']",-0.4215,negative
-Better Late Then Never,better late then never,"['better', 'late', 'never']",0.4404,positive
-Redemption,redemption,['redemption'],0.0,positive
-Why it is ranked so highly.,why it is ranked so highly,"['ranked', 'highly']",0.0,positive
-Excellent Stephen King adaptation; flawless Robbins & Freeman,excellent stephen king adaptation flawless robbins  freeman,"['excellent', 'stephen', 'king', 'adaptation', 'flawless', 'robbins', 'freeman']",0.8658,positive
-Top Three Favorite Movies,top three favorite movies,"['top', 'three', 'favorite', 'movie']",0.5859,positive
-"Richly human, uplifting",richly human uplifting,"['richly', 'human', 'uplifting']",0.4404,positive
-The Shawshank Redemption,the shawshank redemption,"['shawshank', 'redemption']",0.0,positive
-Truly the greatest prison movie ever!,truly the greatest prison movie ever,"['truly', 'greatest', 'prison', 'movie', 'ever']",0.5859,positive
-Delightful to sit through,delightful to sit through,"['delightful', 'sit']",0.5859,positive
-"Good , But It Is Overrated By Some",good  but it is overrated by some,"['good', 'overrated']",0.2382,positive
-Now here is a classic,now here is a classic,['classic'],0.0,positive
-So amazing,so amazing,['amazing'],0.624,positive
-Relentless Storytelling,relentless storytelling,"['relentless', 'storytelling']",0.0516,positive
-My #1,my 1,['1'],0.0,positive
-Perfection!,perfection,['perfection'],0.5719,positive
-The best film ever made!,the best film ever made,"['best', 'film', 'ever', 'made']",0.6369,positive
-A CLASSIC,a classic,['classic'],0.0,positive
-Beautiful movie,beautiful movie,"['beautiful', 'movie']",0.5994,positive
-"A melodramatic, motherf***ing masterpiece",a melodramatic motherfing masterpiece,"['melodramatic', 'motherfing', 'masterpiece']",0.6249,positive
-"Good movie, but best of all time? Hardly . . .",good movie but best of all time hardly   ,"['good', 'movie', 'best', 'time', 'hardly']",0.8294,positive
-Well Worth A Read.,well worth a read,"['well', 'worth', 'read']",0.4588,positive
-"A bit overrated, but still an amazing film",a bit overrated but still an amazing film,"['bit', 'overrated', 'still', 'amazing', 'film']",0.7351,positive
-10 out of 10,10 out of 10,"['10', '10']",0.0,positive
-Hope is a dangerous thing,hope is a dangerous thing,"['hope', 'dangerous', 'thing']",-0.0516,negative
-A Truly Uplifting Film,a truly uplifting film,"['truly', 'uplifting', 'film']",0.4404,positive
-Really good adapted screenplay but that's not enough to being the top rated movie of all time.,really good adapted screenplay but thats not enough to being the top rated movie of all time,"['really', 'good', 'adapted', 'screenplay', 'thats', 'enough', 'top', 'rated', 'movie', 'time']",0.51,positive
-Oh my godmother,oh my godmother,"['oh', 'godmother']",0.0,positive
-Freeman gives it depth,freeman gives it depth,"['freeman', 'give', 'depth']",0.4019,positive
-Over Rated,over rated,['rated'],0.0,positive
-Highly Overrated But Only Good,highly overrated but only good,"['highly', 'overrated', 'good']",0.5927,positive
-Near perfect,near perfect,"['near', 'perfect']",0.5719,positive
-Superb prison buddy story - but sadly unimportant film,superb prison buddy story  but sadly unimportant film,"['superb', 'prison', 'buddy', 'story', 'sadly', 'unimportant', 'film']",-0.7391,negative
-Superb,superb,['superb'],0.6249,positive
-I didn't think films could be this good....,i didnt think films could be this good,"['didnt', 'think', 'film', 'could', 'good']",0.5228,positive
-Mystery,mystery,['mystery'],0.0,positive
-A bit overhyped,a bit overhyped,"['bit', 'overhyped']",0.0,positive
-"Excellent Movie, But Not ""Greatest of All Time.""",excellent movie but not greatest of all time,"['excellent', 'movie', 'greatest', 'time']",-0.4943,negative
-Shawshank Redemption Comes Out Clean,shawshank redemption comes out clean,"['shawshank', 'redemption', 'come', 'clean']",0.4019,positive
-"If other people would rave about it less, I'd rave about it more",if other people would rave about it less id rave about it more,"['people', 'would', 'rave', 'le', 'id', 'rave']",0.0,positive
-Emotionally Fulfilling,emotionally fulfilling,"['emotionally', 'fulfilling']",0.0,positive
-"When they give you life, that's what they take",when they give you life thats what they take,"['give', 'life', 'thats', 'take']",0.0,positive
-"#1 on IMDB's top 250, one of the best movies of all time and more than 6200 reviews... what's more to say about this movie?",1 on imdbs top 250 one of the best movies of all time and more than 6200 reviews whats more to say about this movie,"['1', 'imdbs', 'top', '250', 'one', 'best', 'movie', 'time', '6200', 'review', 'whats', 'say', 'movie']",0.7184,positive
-Shamelessly uplifting; a heartfelt classic,shamelessly uplifting a heartfelt classic,"['shamelessly', 'uplifting', 'heartfelt', 'classic']",0.2732,positive
-"A Powerful Story of Courage, Perseverance and Friendship ...",a powerful story of courage perseverance and friendship ,"['powerful', 'story', 'courage', 'perseverance', 'friendship']",0.836,positive
-Redemptive Masterpiece; Masterful Redemption,redemptive masterpiece masterful redemption,"['redemptive', 'masterpiece', 'masterful', 'redemption']",0.6249,positive
-NOT just a prison movie,not just a prison movie,"['prison', 'movie']",0.4023,positive
-"Easy-breezy, obvious as a child's lie.",easybreezy obvious as a childs lie,"['easybreezy', 'obvious', 'child', 'lie']",0.0,positive
-Stephen King's prison tale with a happy ending...,stephen kings prison tale with a happy ending,"['stephen', 'king', 'prison', 'tale', 'happy', 'ending']",0.1027,positive
-"For hope, see it only.",for hope see it only,"['hope', 'see']",0.4404,positive
-For Everyone who Gave This Movie a 1,for everyone who gave this movie a 1,"['everyone', 'gave', 'movie', '1']",0.0,positive
-Not that much good to get the rank 1,not that much good to get the rank 1,"['much', 'good', 'get', 'rank', '1']",-0.3412,negative
-Overrated,overrated,['overrated'],0.0,positive
-"Hope is a good thing, maybe the best of things.",hope is a good thing maybe the best of things,"['hope', 'good', 'thing', 'maybe', 'best', 'thing']",0.875,positive
-A favourite film,a favourite film,"['favourite', 'film']",0.0,positive
-You don't understand! I'm not supposed to be here!,you dont understand im not supposed to be here,"['dont', 'understand', 'im', 'supposed']",0.0,positive
-A movie to fuel one's life.,a movie to fuel ones life,"['movie', 'fuel', 'one', 'life']",0.0,positive
-Observations...,observations,['observation'],0.0,positive
-Redeeming.,redeeming,['redeeming'],0.0,positive
-A Story Of Hope & Resilence,a story of hope  resilence,"['story', 'hope', 'resilence']",0.4404,positive
-"Reputation notwithstanding, this is powerful stuff",reputation notwithstanding this is powerful stuff,"['reputation', 'notwithstanding', 'powerful', 'stuff']",0.4215,positive
-about freedom,about freedom,['freedom'],0.6369,positive
-I can see why this is rated Number 1 on IMDb.,i can see why this is rated number 1 on imdb,"['see', 'rated', 'number', '1', 'imdb']",0.0772,positive
-"A Bit Over-Rated Perhaps, But Still A Good Movie With Great Performances From Freeman and Robbins",a bit overrated perhaps but still a good movie with great performances from freeman and robbins,"['bit', 'overrated', 'perhaps', 'still', 'good', 'movie', 'great', 'performance', 'freeman', 'robbins']",0.9331,positive
-One Of The Most Inspiring And Beautiful Movies Of All Time,one of the most inspiring and beautiful movies of all time,"['one', 'inspiring', 'beautiful', 'movie', 'time']",0.8051,positive
-Highly Overrated But Still Good,highly overrated but still good,"['highly', 'overrated', 'still', 'good']",0.5927,positive
-The only time I'd call anything The Best Film Ever Made.,the only time id call anything the best film ever made,"['time', 'id', 'call', 'anything', 'best', 'film', 'ever', 'made']",0.6369,positive
-An amazing tale of hope and patience,an amazing tale of hope and patience,"['amazing', 'tale', 'hope', 'patience']",0.7717,positive
-Too flawed,too flawed,['flawed'],0.0,positive
-A timeless masterpiece. A heart wrenching drama. An epic tale of true friendship.,a timeless masterpiece a heart wrenching drama an epic tale of true friendship,"['timeless', 'masterpiece', 'heart', 'wrenching', 'drama', 'epic', 'tale', 'true', 'friendship']",0.8689,positive
-The greatest story of persistence pays off.,the greatest story of persistence pays off,"['greatest', 'story', 'persistence', 'pay']",0.6369,positive
-One of the best movies ever made.,one of the best movies ever made,"['one', 'best', 'movie', 'ever', 'made']",0.6369,positive
-really superb,really superb,"['really', 'superb']",0.659,positive
-Very Cool!!!,very cool,['cool'],0.3804,positive
-"Incredibly moving, funny and haunting",incredibly moving funny and haunting,"['incredibly', 'moving', 'funny', 'haunting']",0.2682,positive
-Masterpiece.,masterpiece,['masterpiece'],0.6249,positive
-The best movie i ever watched,the best movie i ever watched,"['best', 'movie', 'ever', 'watched']",0.6369,positive
-What a movie!!!,what a movie,['movie'],0.0,positive
-The best movie ever?,the best movie ever,"['best', 'movie', 'ever']",0.6369,positive
-Best of all time!!!,best of all time,"['best', 'time']",0.6369,positive
-One of the best - of all time. Seriously.,one of the best  of all time seriously,"['one', 'best', 'time', 'seriously']",0.5423,positive
-AN EXCELLENT MASTERPIECE !!,an excellent masterpiece ,"['excellent', 'masterpiece']",0.8316,positive
-"Blatantly Simple, yet Utterly Beautiful",blatantly simple yet utterly beautiful,"['blatantly', 'simple', 'yet', 'utterly', 'beautiful']",0.6361,positive
-The best film of all time ?,the best film of all time ,"['best', 'film', 'time']",0.6369,positive
-A true story of friendship and hard times,a true story of friendship and hard times,"['true', 'story', 'friendship', 'hard', 'time']",0.6486,positive
-You'll get it when you see it.,youll get it when you see it,"['youll', 'get', 'see']",0.0,positive
-"Sometimes, we all just don't agree.",sometimes we all just dont agree,"['sometimes', 'dont', 'agree']",-0.2755,negative
-Morgan Freeman is the only great thing in this movie,morgan freeman is the only great thing in this movie,"['morgan', 'freeman', 'great', 'thing', 'movie']",0.7783,positive
-best movie ever,best movie ever,"['best', 'movie', 'ever']",0.6369,positive
-I thought there were supposed to be no fairytales?,i thought there were supposed to be no fairytales,"['thought', 'supposed', 'fairytale']",-0.296,negative
-Good movie - Number 1 ??? No way,good movie  number 1  no way,"['good', 'movie', 'number', '1', 'way']",0.25,positive
-WYLION - Do you trust your wife? You can definitely trust me!,wylion  do you trust your wife you can definitely trust me,"['wylion', 'trust', 'wife', 'definitely', 'trust']",0.8519,positive
-"Graceful, intriguing Tim Robbins triumph",graceful intriguing tim robbins triumph,"['graceful', 'intriguing', 'tim', 'robbins', 'triumph']",0.7269,positive
-What's SO special?,whats so special,"['whats', 'special']",0.4576,positive
-First 10 I have ever given out,first 10 i have ever given out,"['first', '10', 'ever', 'given']",0.0,positive
-Escape from Shawshank,escape from shawshank,"['escape', 'shawshank']",0.1779,positive
-I thought I'd discovered this movie,i thought id discovered this movie,"['thought', 'id', 'discovered', 'movie']",0.0,positive
-"If you haven't seen this movie, stop everything and watch it right now",if you havent seen this movie stop everything and watch it right now,"['havent', 'seen', 'movie', 'stop', 'everything', 'watch', 'right']",-0.296,negative
-A Masterpiece,a masterpiece,['masterpiece'],0.6249,positive
-The Shawshank Redemption,the shawshank redemption,"['shawshank', 'redemption']",0.0,positive
-One of my TOP TEN,one of my top ten,"['one', 'top', 'ten']",0.2023,positive
-Breaking Big Rocks Into Little Rocks,breaking big rocks into little rocks,"['breaking', 'big', 'rock', 'little', 'rock']",0.0,positive
-Finding Beauty in the Shadows,finding beauty in the shadows,"['finding', 'beauty', 'shadow']",0.5859,positive
-The Shawshank Journey,the shawshank journey,"['shawshank', 'journey']",0.0,positive
-A Timeless Tale of Hope and Resilience,a timeless tale of hope and resilience,"['timeless', 'tale', 'hope', 'resilience']",0.4404,positive
-Perfectly written. Perfectly directed. Perfectly cast. Perfectly acted. Perfect,perfectly written perfectly directed perfectly cast perfectly acted perfect,"['perfectly', 'written', 'perfectly', 'directed', 'perfectly', 'cast', 'perfectly', 'acted', 'perfect']",0.9702,positive
-Don't Watch This Movie!! (Unless you want to Cry),dont watch this movie unless you want to cry,"['dont', 'watch', 'movie', 'unless', 'want', 'cry']",-0.4215,negative
-"A great film, but #2?",a great film but 2,"['great', 'film', '2']",0.3716,positive
-Greatness,greatness,['greatness'],0.0,positive
-My second favorite movie of all time,my second favorite movie of all time,"['second', 'favorite', 'movie', 'time']",0.4588,positive
-"Reasonably good...but far too clichéd to be called ""great""",reasonably goodbut far too clichéd to be called great,"['reasonably', 'goodbut', 'far', 'clichéd', 'called', 'great']",0.6249,positive
-Absolutely brilliant,absolutely brilliant,"['absolutely', 'brilliant']",0.624,positive
-Entertaining but still very much a piece of fiction,entertaining but still very much a piece of fiction,"['entertaining', 'still', 'much', 'piece', 'fiction']",0.2382,positive
-"Not worth the hype, a script full of shortcuts",not worth the hype a script full of shortcuts,"['worth', 'hype', 'script', 'full', 'shortcut']",-0.1695,negative
-"Prison thriller with violence, hatred, corruption, friendship and joy.",prison thriller with violence hatred corruption friendship and joy,"['prison', 'thriller', 'violence', 'hatred', 'corruption', 'friendship', 'joy']",-0.6705,negative
-#2086,2086,['2086'],0.0,positive
-Greatest movie of all time!,greatest movie of all time,"['greatest', 'movie', 'time']",0.6369,positive
-The greatest movie ever!,the greatest movie ever,"['greatest', 'movie', 'ever']",0.6369,positive
-Decided to give it a try and..,decided to give it a try and,"['decided', 'give', 'try']",0.0,positive
-Meh? Only Joking!,meh only joking,"['meh', 'joking']",0.1531,positive
-Undeservedly top 1,undeservedly top 1,"['undeservedly', 'top', '1']",0.2023,positive
-One word. Outstanding.,one word outstanding,"['one', 'word', 'outstanding']",0.6124,positive
-"Overlong, Overblown and Over-rated",overlong overblown and overrated,"['overlong', 'overblown', 'overrated']",0.0,positive
-Best movie ever!!,best movie ever,"['best', 'movie', 'ever']",0.6369,positive
-Why so high?,why so high,['high'],0.0,positive
-nice,nice,['nice'],0.4215,positive
-A prison drama starring Tim Robbins and Morgan Freeman.,a prison drama starring tim robbins and morgan freeman,"['prison', 'drama', 'starring', 'tim', 'robbins', 'morgan', 'freeman']",-0.1531,negative
-The Prison Of Storytelling,the prison of storytelling,"['prison', 'storytelling']",-0.5106,negative
-Exceptional,exceptional,['exceptional'],0.0,positive
-"Very good, but probably over-praised",very good but probably overpraised,"['good', 'probably', 'overpraised']",0.2724,positive
-"Review of ""The Shawshank Redemption""",review of the shawshank redemption,"['review', 'shawshank', 'redemption']",0.0,positive
-One of the best movies I have ever seen,one of the best movies i have ever seen,"['one', 'best', 'movie', 'ever', 'seen']",0.6369,positive
-I make the questions here!,i make the questions here,"['make', 'question']",0.0,positive
-A movie revolution upon all others,a movie revolution upon all others,"['movie', 'revolution', 'upon', 'others']",0.0,positive
-Simply Perfect,simply perfect,"['simply', 'perfect']",0.5719,positive
-My own personal view,my own personal view,"['personal', 'view']",0.0,positive
-About a very very long escape from prison,about a very very long escape from prison,"['long', 'escape', 'prison']",-0.2635,negative
-This is a wonderful movie!!!!,this is a wonderful movie,"['wonderful', 'movie']",0.5719,positive
-absurdly overrated,absurdly overrated,"['absurdly', 'overrated']",0.0,positive
-"Captivating, breathtaking and compelling...",captivating breathtaking and compelling,"['captivating', 'breathtaking', 'compelling']",0.5994,positive
-What a touching movie !,what a touching movie ,"['touching', 'movie']",0.0,positive
-Magical film,magical film,"['magical', 'film']",0.0,positive
-Hope Unchained: The Shawshank Redemption,hope unchained the shawshank redemption,"['hope', 'unchained', 'shawshank', 'redemption']",0.4404,positive
-"Tedious, overlong, with ""hope"" being the second word spoken in just about every sentence... who cares?",tedious overlong with hope being the second word spoken in just about every sentence who cares,"['tedious', 'overlong', 'hope', 'second', 'word', 'spoken', 'every', 'sentence', 'care']",0.7351,positive
-A cute and sentimental prison drama?,a cute and sentimental prison drama,"['cute', 'sentimental', 'prison', 'drama']",0.25,positive
-"A genre picture, but a satisfying one...",a genre picture but a satisfying one,"['genre', 'picture', 'satisfying', 'one']",0.6124,positive
-Deserving of its praise,deserving of its praise,"['deserving', 'praise']",0.5574,positive
-Three tales of hope,three tales of hope,"['three', 'tale', 'hope']",0.4404,positive
-"If you can say overrated, I can say Shawshank Redemption",if you can say overrated i can say shawshank redemption,"['say', 'overrated', 'say', 'shawshank', 'redemption']",0.0,positive
-The greatest transition from confinement to freedom ever portrayed in film,the greatest transition from confinement to freedom ever portrayed in film,"['greatest', 'transition', 'confinement', 'freedom', 'ever', 'portrayed', 'film']",0.8555,positive
-A Film That Inspires Hope and Freedom,a film that inspires hope and freedom,"['film', 'inspires', 'hope', 'freedom']",0.875,positive
-Over rated,over rated,['rated'],0.0,positive
-The greatest movie ever made and to be made,the greatest movie ever made and to be made,"['greatest', 'movie', 'ever', 'made', 'made']",0.6369,positive
-One of the Best Films Ever Put on the Silver Screen,one of the best films ever put on the silver screen,"['one', 'best', 'film', 'ever', 'put', 'silver', 'screen']",0.6369,positive
-Not,not,[],0.0,positive
-Over rated,over rated,['rated'],0.0,positive
-Not the best prison movie,not the best prison movie,"['best', 'prison', 'movie']",-0.1695,negative
-Wow!!!Amazing!!!Breathtaking!!!,wowamazingbreathtaking,['wowamazingbreathtaking'],0.0,positive
-The GOAT,the goat,['goat'],0.0,positive
-one of my absolute favorites!,one of my absolute favorites,"['one', 'absolute', 'favorite']",0.4215,positive
-Andy n Red,andy n red,"['andy', 'n', 'red']",0.0,positive
-"Flawless filmmaking, deserves all the credit it receives and then some",flawless filmmaking deserves all the credit it receives and then some,"['flawless', 'filmmaking', 'deserves', 'credit', 'receives']",0.7096,positive
-Overrated sappy drama,overrated sappy drama,"['overrated', 'sappy', 'drama']",-0.25,negative
-what can i say,what can i say,['say'],0.0,positive
-A kind-hearted masterpiece of friendship...,a kindhearted masterpiece of friendship,"['kindhearted', 'masterpiece', 'friendship']",0.7906,positive
-To predictable,to predictable,['predictable'],0.0,positive
-This Movie Saved My Life.,this movie saved my life,"['movie', 'saved', 'life']",0.4215,positive
-A cinematic phenomenon,a cinematic phenomenon,"['cinematic', 'phenomenon']",0.0,positive
-Once in a lifetime movie,once in a lifetime movie,"['lifetime', 'movie']",0.0,positive
-Ho hum....,ho hum,"['ho', 'hum']",0.0,positive
-Robbed at the Academy Awards,robbed at the academy awards,"['robbed', 'academy', 'award']",0.4588,positive
-Probably Not #1,probably not 1,"['probably', '1']",0.0,positive
-The best movie of my life,the best movie of my life,"['best', 'movie', 'life']",0.6369,positive
-"The best movie ever, excellent is a small word for this movie!",the best movie ever excellent is a small word for this movie,"['best', 'movie', 'ever', 'excellent', 'small', 'word', 'movie']",0.836,positive
-"The best, pure and simple.",the best pure and simple,"['best', 'pure', 'simple']",0.6369,positive
-9 on a scale of 10,9 on a scale of 10,"['9', 'scale', '10']",0.0,positive
-"Frankly, I don't get it",frankly i dont get it,"['frankly', 'dont', 'get']",0.0,positive
-I don't hate this movie - I hate the Fan-base,i dont hate this movie  i hate the fanbase,"['dont', 'hate', 'movie', 'hate', 'fanbase']",0.7181,positive
-A gritty look at prison. One of the best prison movies ever.,a gritty look at prison one of the best prison movies ever,"['gritty', 'look', 'prison', 'one', 'best', 'prison', 'movie', 'ever']",-0.34,negative
-The 2nd Best Movie Ever Made,the 2nd best movie ever made,"['2nd', 'best', 'movie', 'ever', 'made']",0.6369,positive
-Hope,hope,['hope'],0.4404,positive
-What else can you say?,what else can you say,"['else', 'say']",0.0,positive
-one of the best,one of the best,"['one', 'best']",0.6369,positive
-One of the best movies I have ever watched in my life,one of the best movies i have ever watched in my life,"['one', 'best', 'movie', 'ever', 'watched', 'life']",0.6369,positive
-Brilliant & Excellent,brilliant  excellent,"['brilliant', 'excellent']",0.8176,positive
-"A heroic fable, but nothing more.",a heroic fable but nothing more,"['heroic', 'fable', 'nothing']",0.3182,positive
-Overrated,overrated,['overrated'],0.0,positive
-The greatest movie ever made!!!,the greatest movie ever made,"['greatest', 'movie', 'ever', 'made']",0.6369,positive
-Extraordinary,extraordinary,['extraordinary'],0.0,positive
-One of the best movies ever made,one of the best movies ever made,"['one', 'best', 'movie', 'ever', 'made']",0.6369,positive
-"""Hope is a good thing, maybe the best of things, and no good thing ever dies""",hope is a good thing maybe the best of things and no good thing ever dies,"['hope', 'good', 'thing', 'maybe', 'best', 'thing', 'good', 'thing', 'ever', 'dy']",0.8934,positive
-The magnum opus of hollywood.,the magnum opus of hollywood,"['magnum', 'opus', 'hollywood']",0.0,positive
-"Above average, but not great.",above average but not great,"['average', 'great']",-0.6642,negative
-the Shawshank redemption is a world class film,the shawshank redemption is a world class film,"['shawshank', 'redemption', 'world', 'class', 'film']",0.0,positive
-A great film of a helping hand leading to end-around justice,a great film of a helping hand leading to endaround justice,"['great', 'film', 'helping', 'hand', 'leading', 'endaround', 'justice']",0.9169,positive
-"A beautifully crafted tale that underlines subjects that have been forgotten in modern films- friendship,hope, freedom",a beautifully crafted tale that underlines subjects that have been forgotten in modern films friendshiphope freedom,"['beautifully', 'crafted', 'tale', 'underline', 'subject', 'forgotten', 'modern', 'film', 'friendshiphope', 'freedom']",0.7906,positive
-"moving and emotionally impactful(if you liked ""The Green Mile"" you will like this movie)",moving and emotionally impactfulif you liked the green mile you will like this movie,"['moving', 'emotionally', 'impactfulif', 'liked', 'green', 'mile', 'like', 'movie']",0.6486,positive
-Best Ever,best ever,"['best', 'ever']",0.6369,positive
-Spectacular,spectacular,['spectacular'],0.0,positive
-"Drags your emotions through the wringer, only to have them come out clean & full of hope on the other side",drags your emotions through the wringer only to have them come out clean  full of hope on the other side,"['drag', 'emotion', 'wringer', 'come', 'clean', 'full', 'hope', 'side']",0.5994,positive
-So it's not everyday that you watch the greatest movie of your lifetime.,so its not everyday that you watch the greatest movie of your lifetime,"['everyday', 'watch', 'greatest', 'movie', 'lifetime']",0.6369,positive
-Great Story Telling,great story telling,"['great', 'story', 'telling']",0.6249,positive
-Bloody fantastic,bloody fantastic,"['bloody', 'fantastic']",0.1779,positive
-The best jailhouse movie of all time!,the best jailhouse movie of all time,"['best', 'jailhouse', 'movie', 'time']",0.6369,positive
-An outstanding movie!,an outstanding movie,"['outstanding', 'movie']",0.6124,positive
-"A Breathtaking Story and an Outstanding Cast,",a breathtaking story and an outstanding cast,"['breathtaking', 'story', 'outstanding', 'cast']",0.7906,positive
-A simple classic,a simple classic,"['simple', 'classic']",0.0,positive
-A Film That Doesn't Fit Into A Genre (And That's What Makes It Great),a film that doesnt fit into a genre and thats what makes it great,"['film', 'doesnt', 'fit', 'genre', 'thats', 'make', 'great']",0.457,positive
-The best movie I've ever seen,the best movie ive ever seen,"['best', 'movie', 'ive', 'ever', 'seen']",0.6369,positive
-I love The Shawshank Redemption. It's Awesome. Brooks was here. So was Andy and Red. I guess I just miss my friends.,i love the shawshank redemption its awesome brooks was here so was andy and red i guess i just miss my friends,"['love', 'shawshank', 'redemption', 'awesome', 'brook', 'andy', 'red', 'guess', 'miss', 'friend']",0.8957,positive
-Stephen King's best adaptation,stephen kings best adaptation,"['stephen', 'king', 'best', 'adaptation']",0.6369,positive
-Good but ludicrously overrated,good but ludicrously overrated,"['good', 'ludicrously', 'overrated']",0.1655,positive
+text,date,text_cleaned,tokens,compound,predicted_sentiment
+good,1 January 2024,good,['good'],0.4404,positive
+"The Shawshank Redemption,"" highlighting its brilliance, performances, and impact.",31 December 2023,the shawshank redemption highlighting its brilliance performances and impact,"['shawshank', 'redemption', 'highlighting', 'brilliance', 'performance', 'impact']",0.5994,positive
+A Timeless Masterpiece that Will Leave You Speechless,30 December 2023,a timeless masterpiece that will leave you speechless,"['timeless', 'masterpiece', 'leave', 'speechless']",0.5994,positive
+"""The Shawshank Redemption"" is one of the best movies in the world. This movie was directed by Frank Darabont in 1994 and is based on a story by Stephen King called ""Rita Haywo",30 December 2023,the shawshank redemption is one of the best movies in the world this movie was directed by frank darabont in 1994 and is based on a story by stephen king called rita haywo,"['shawshank', 'redemption', 'one', 'best', 'movie', 'world', 'movie', 'directed', 'frank', 'darabont', '1994', 'based', 'story', 'stephen', 'king', 'called', 'rita', 'haywo']",0.6369,positive
+Good,30 December 2023,good,['good'],0.4404,positive
+Great,30 December 2023,great,['great'],0.6249,positive
+"Get busy living, or get busy dying",30 December 2023,get busy living or get busy dying,"['get', 'busy', 'living', 'get', 'busy', 'dying']",0.0,positive
+Hope is a good thing,30 December 2023,hope is a good thing,"['hope', 'good', 'thing']",0.7003,positive
+the shawshank redemption,28 December 2023,the shawshank redemption,"['shawshank', 'redemption']",0.0,positive
+Good,27 December 2023,good,['good'],0.4404,positive
+Good to watch,27 December 2023,good to watch,"['good', 'watch']",0.4404,positive
+Themes of Hope and Redemption,26 December 2023,themes of hope and redemption,"['theme', 'hope', 'redemption']",0.4404,positive
+In the conversation,26 December 2023,in the conversation,['conversation'],0.0,positive
+The shawshank Redemption,26 December 2023,the shawshank redemption,"['shawshank', 'redemption']",0.0,positive
+My 3rd favorite movie ever,26 December 2023,my 3rd favorite movie ever,"['3rd', 'favorite', 'movie', 'ever']",0.4588,positive
+Not as good as I was lead to believe.,26 December 2023,not as good as i was lead to believe,"['good', 'lead', 'believe']",-0.3412,negative
+Characters,24 December 2023,characters,['character'],0.0,positive
+"The Shawshank Redemption"" (1994) stands as a masterpiece that transcends time",24 December 2023,the shawshank redemption 1994 stands as a masterpiece that transcends time,"['shawshank', 'redemption', '1994', 'stand', 'masterpiece', 'transcends', 'time']",0.6249,positive
+Best ever,23 December 2023,best ever,"['best', 'ever']",0.6369,positive
+Andy Dufrene is my hero,23 December 2023,andy dufrene is my hero,"['andy', 'dufrene', 'hero']",0.5574,positive
+Live Online Fm Radio From India,23 December 2023,live online fm radio from india,"['live', 'online', 'fm', 'radio', 'india']",0.0,positive
+I finally stopped putting off watching this film and....,23 December 2023,i finally stopped putting off watching this film and,"['finally', 'stopped', 'putting', 'watching', 'film']",-0.2263,negative
+The best movie i ever watched.,22 December 2023,the best movie i ever watched,"['best', 'movie', 'ever', 'watched']",0.6369,positive
+A credible film,22 December 2023,a credible film,"['credible', 'film']",0.0,positive
+amazing movie,21 December 2023,amazing movie,"['amazing', 'movie']",0.5859,positive
+The Shawshank Redemption: A Timeless Masterpiece,21 December 2023,the shawshank redemption a timeless masterpiece,"['shawshank', 'redemption', 'timeless', 'masterpiece']",0.6249,positive
+Shawshank Redemption: A Cinematic Triumph of Hope and Redemption,21 December 2023,shawshank redemption a cinematic triumph of hope and redemption,"['shawshank', 'redemption', 'cinematic', 'triumph', 'hope', 'redemption']",0.7184,positive
+Hope is the most beautiful thing in this world....,21 December 2023,hope is the most beautiful thing in this world,"['hope', 'beautiful', 'thing', 'world']",0.796,positive
+The best film ever made,21 December 2023,the best film ever made,"['best', 'film', 'ever', 'made']",0.6369,positive
+The Shawshank Redemption(1994),20 December 2023,the shawshank redemption1994,"['shawshank', 'redemption1994']",0.0,positive
+captivating film,20 December 2023,captivating film,"['captivating', 'film']",0.0,positive
+A Timeless Masterpiece: The Shawshank Redemption,20 December 2023,a timeless masterpiece the shawshank redemption,"['timeless', 'masterpiece', 'shawshank', 'redemption']",0.6249,positive
+nicee,18 December 2023,nicee,['nicee'],0.0,positive
+fff,18 December 2023,fff,['fff'],0.0,positive
+A Masterpiece of Redemption and Hope,15 December 2023,a masterpiece of redemption and hope,"['masterpiece', 'redemption', 'hope']",0.7906,positive
+An Unforgettable Movie,14 December 2023,an unforgettable movie,"['unforgettable', 'movie']",0.0,positive
+Shawshank Redemption: A timeless classic,14 December 2023,shawshank redemption a timeless classic,"['shawshank', 'redemption', 'timeless', 'classic']",0.0,positive
+A Masterpiece of Redemption and Hope,14 December 2023,a masterpiece of redemption and hope,"['masterpiece', 'redemption', 'hope']",0.7906,positive
+Still one of the best movies. Quality does not age.,14 December 2023,still one of the best movies quality does not age,"['still', 'one', 'best', 'movie', 'quality', 'age']",0.6369,positive
+Must Watch,13 December 2023,must watch,"['must', 'watch']",0.0,positive
+My opinion,13 December 2023,my opinion,['opinion'],0.0,positive
+morgan freeman,13 December 2023,morgan freeman,"['morgan', 'freeman']",0.4019,positive
+Perfection,12 December 2023,perfection,['perfection'],0.5719,positive
+Timeless Redemption: A Cinematic Masterpiece Showcasing the Unyielding Power of Hope,12 December 2023,timeless redemption a cinematic masterpiece showcasing the unyielding power of hope,"['timeless', 'redemption', 'cinematic', 'masterpiece', 'showcasing', 'unyielding', 'power', 'hope']",0.7906,positive
+Visakhapatnam Escorts Service,12 December 2023,visakhapatnam escorts service,"['visakhapatnam', 'escort', 'service']",0.0,positive
+Best movie,12 December 2023,best movie,"['best', 'movie']",0.6369,positive
+The Power of Free Will,11 December 2023,the power of free will,"['power', 'free']",0.5106,positive
+Unraveling the Tapestry of Hope: A Shawshank Redemption Odyssey,11 December 2023,unraveling the tapestry of hope a shawshank redemption odyssey,"['unraveling', 'tapestry', 'hope', 'shawshank', 'redemption', 'odyssey']",0.4404,positive
+a masterpiece,10 December 2023,a masterpiece,['masterpiece'],0.6249,positive
+The Real Villain In Shawshank Redemption,9 December 2023,the real villain in shawshank redemption,"['real', 'villain', 'shawshank', 'redemption']",-0.5574,negative
+"In the pantheon of cinema, ""The Shawshank Redemption"" stands as a beacon of storytelling excellence.",9 December 2023,in the pantheon of cinema the shawshank redemption stands as a beacon of storytelling excellence,"['pantheon', 'cinema', 'shawshank', 'redemption', 'stand', 'beacon', 'storytelling', 'excellence']",0.6249,positive
+The Shawshank Redemption,9 December 2023,the shawshank redemption,"['shawshank', 'redemption']",0.0,positive
+Skazani na Shawshank,9 December 2023,skazani na shawshank,"['skazani', 'na', 'shawshank']",0.0,positive
+Great movie,8 December 2023,great movie,"['great', 'movie']",0.6249,positive
+The Shawshank,8 December 2023,the shawshank,['shawshank'],0.0,positive
+"The Shawshank Redemption"": A Timeless Cinematic Masterpiece of Hope and Redemption",8 December 2023,the shawshank redemption a timeless cinematic masterpiece of hope and redemption,"['shawshank', 'redemption', 'timeless', 'cinematic', 'masterpiece', 'hope', 'redemption']",0.7906,positive
+The Shawshank Redemption,8 December 2023,the shawshank redemption,"['shawshank', 'redemption']",0.0,positive
+The Shawshank Redemption,8 December 2023,the shawshank redemption,"['shawshank', 'redemption']",0.0,positive
+What a masterpiece - A must watch,6 December 2023,what a masterpiece  a must watch,"['masterpiece', 'must', 'watch']",0.6249,positive
+"The Timeless Triumph of ""The Shawshank Redemption""",6 December 2023,the timeless triumph of the shawshank redemption,"['timeless', 'triumph', 'shawshank', 'redemption']",0.4767,positive
+amazing,6 December 2023,amazing,['amazing'],0.5859,positive
+Superb!,5 December 2023,superb,['superb'],0.6249,positive
+Classic,5 December 2023,classic,['classic'],0.0,positive
+Timeless Tale of Hope and Redemption: 'The Shawshank Redemption' Review,5 December 2023,timeless tale of hope and redemption the shawshank redemption review,"['timeless', 'tale', 'hope', 'redemption', 'shawshank', 'redemption', 'review']",0.4404,positive
+A Cinematic Masterpiece with Timeless Impact,3 December 2023,a cinematic masterpiece with timeless impact,"['cinematic', 'masterpiece', 'timeless', 'impact']",0.6249,positive
+Movie of all time,2 December 2023,movie of all time,"['movie', 'time']",0.0,positive
+I liked this movie a lot,1 December 2023,i liked this movie a lot,"['liked', 'movie', 'lot']",0.4215,positive
+Captivating and utterly compelling!!!!,1 December 2023,captivating and utterly compelling,"['captivating', 'utterly', 'compelling']",0.2944,positive
+This movie is a greatest drama and acting and emotional connectivity,30 November 2023,this movie is a greatest drama and acting and emotional connectivity,"['movie', 'greatest', 'drama', 'acting', 'emotional', 'connectivity']",0.7003,positive
+Nice movie,30 November 2023,nice movie,"['nice', 'movie']",0.4215,positive
+Nice movie men,29 November 2023,nice movie men,"['nice', 'movie', 'men']",0.4215,positive
+Great!,29 November 2023,great,['great'],0.6249,positive
+A MILESTONE MOVIE IN THE HISTORY OF CINEMA,29 November 2023,a milestone movie in the history of cinema,"['milestone', 'movie', 'history', 'cinema']",0.0,positive
+the greatest of all time.,29 November 2023,the greatest of all time,"['greatest', 'time']",0.6369,positive
+One of the best movies of all time,28 November 2023,one of the best movies of all time,"['one', 'best', 'movie', 'time']",0.6369,positive
+beyond perfect,28 November 2023,beyond perfect,"['beyond', 'perfect']",0.5719,positive
+Character development and themes,25 November 2023,character development and themes,"['character', 'development', 'theme']",0.0,positive
+Shawshank Redemption: One Hell of a Movie,23 November 2023,shawshank redemption one hell of a movie,"['shawshank', 'redemption', 'one', 'hell', 'movie']",-0.6808,negative
+10/10,23 November 2023,1010,['1010'],0.0,positive
+quintessential good movie,22 November 2023,quintessential good movie,"['quintessential', 'good', 'movie']",0.4404,positive
+GOOD,22 November 2023,good,['good'],0.4404,positive
+An unforgettable journey of hope and redemption,22 November 2023,an unforgettable journey of hope and redemption,"['unforgettable', 'journey', 'hope', 'redemption']",0.4404,positive
+masterpiece!,21 November 2023,masterpiece,['masterpiece'],0.6249,positive
+woww just wow,21 November 2023,woww just wow,"['woww', 'wow']",0.5859,positive
+about free,21 November 2023,about free,['free'],0.5106,positive
+An incredible movie,21 November 2023,an incredible movie,"['incredible', 'movie']",0.0,positive
+It's excellent!,20 November 2023,its excellent,['excellent'],0.5719,positive
+10,20 November 2023,10,['10'],0.0,positive
+Amazing Movie For internment purpose,19 November 2023,amazing movie for internment purpose,"['amazing', 'movie', 'internment', 'purpose']",0.5859,positive
+The greatest,19 November 2023,the greatest,['greatest'],0.6369,positive
+Incredible,18 November 2023,incredible,['incredible'],0.0,positive
+Stupid Storyline,18 November 2023,stupid storyline,"['stupid', 'storyline']",-0.5267,negative
+Just speechless 😶,17 November 2023,just speechless ,['speechless'],0.0,positive
+"""The Shawshank Redemption"" stands as a cinematic masterpiece that transcends the boundaries of time and genre.",17 November 2023,the shawshank redemption stands as a cinematic masterpiece that transcends the boundaries of time and genre,"['shawshank', 'redemption', 'stand', 'cinematic', 'masterpiece', 'transcends', 'boundary', 'time', 'genre']",0.6249,positive
+the great.,16 November 2023,the great,['great'],0.6249,positive
+Holds up,16 November 2023,holds up,['hold'],0.0,positive
+Dragon Ball Hawaii Shirt,16 November 2023,dragon ball hawaii shirt,"['dragon', 'ball', 'hawaii', 'shirt']",0.0,positive
+Wow type Movie,16 November 2023,wow type movie,"['wow', 'type', 'movie']",0.5859,positive
+Inspired story,16 November 2023,inspired story,"['inspired', 'story']",0.4939,positive
+The Shawshank Redemption: A Cinematic Masterpiece of Hope and Redemption,15 November 2023,the shawshank redemption a cinematic masterpiece of hope and redemption,"['shawshank', 'redemption', 'cinematic', 'masterpiece', 'hope', 'redemption']",0.7906,positive
+An example of a perfect movie,14 November 2023,an example of a perfect movie,"['example', 'perfect', 'movie']",0.5719,positive
+Simply amazing,13 November 2023,simply amazing,"['simply', 'amazing']",0.5859,positive
+insta berkaydoganaay add me,13 November 2023,insta berkaydoganaay add me,"['insta', 'berkaydoganaay', 'add']",0.0,positive
+One of the best Jail Break Movies Ever,12 November 2023,one of the best jail break movies ever,"['one', 'best', 'jail', 'break', 'movie', 'ever']",0.6369,positive
+Amazing Movie.,10 November 2023,amazing movie,"['amazing', 'movie']",0.5859,positive
+Best,10 November 2023,best,['best'],0.6369,positive
+Awesome Movie,10 November 2023,awesome movie,"['awesome', 'movie']",0.6249,positive
+Sense of freedom,9 November 2023,sense of freedom,"['sense', 'freedom']",0.6369,positive
+yeah,9 November 2023,yeah,['yeah'],0.296,positive
+Awsome,9 November 2023,awsome,['awsome'],0.0,positive
+Timeless classic,8 November 2023,timeless classic,"['timeless', 'classic']",0.0,positive
+A Masterpiece of Redemption and Resilience,8 November 2023,a masterpiece of redemption and resilience,"['masterpiece', 'redemption', 'resilience']",0.6249,positive
+Slow but amazing.,7 November 2023,slow but amazing,"['slow', 'amazing']",0.7351,positive
+"""Brooks Was Here""",7 November 2023,brooks was here,['brook'],0.0,positive
+Best movie i ever seen,6 November 2023,best movie i ever seen,"['best', 'movie', 'ever', 'seen']",0.6369,positive
+The Shawshank Redemption 2023,6 November 2023,the shawshank redemption 2023,"['shawshank', 'redemption', '2023']",0.0,positive
+Best Movie Ever Made,6 November 2023,best movie ever made,"['best', 'movie', 'ever', 'made']",0.6369,positive
+thank you mom,5 November 2023,thank you mom,"['thank', 'mom']",0.3612,positive
+Great,5 November 2023,great,['great'],0.6249,positive
+A Timeless Classic,5 November 2023,a timeless classic,"['timeless', 'classic']",0.0,positive
+its an awesome movie,4 November 2023,its an awesome movie,"['awesome', 'movie']",0.6249,positive
+Best movie ever made,4 November 2023,best movie ever made,"['best', 'movie', 'ever', 'made']",0.6369,positive
+such a incredibule movie,3 November 2023,such a incredibule movie,"['incredibule', 'movie']",0.0,positive
+it is not a good movie yeah i said it,2 November 2023,it is not a good movie yeah i said it,"['good', 'movie', 'yeah', 'said']",-0.5096,negative
+A melhor adaptação de Stephen King!,1 November 2023,a melhor adaptação de stephen king,"['melhor', 'adaptação', 'de', 'stephen', 'king']",0.0,positive
+1. Review,31 October 2023,1 review,"['1', 'review']",0.0,positive
+A Tale of Friendship and Hope,31 October 2023,a tale of friendship and hope,"['tale', 'friendship', 'hope']",0.7003,positive
+Excellence,30 October 2023,excellence,['excellence'],0.6249,positive
+its no wonder,30 October 2023,its no wonder,['wonder'],-0.296,negative
+My favorite movie!,29 October 2023,my favorite movie,"['favorite', 'movie']",0.4588,positive
+Greatest Ever,26 October 2023,greatest ever,"['greatest', 'ever']",0.6369,positive
+my review on The Shashank Redemption,26 October 2023,my review on the shashank redemption,"['review', 'shashank', 'redemption']",0.0,positive
+Tim Robbins,26 October 2023,tim robbins,"['tim', 'robbins']",0.0,positive
+"I recently completed my first viewing of Shawshank Redemption, and I must say...",26 October 2023,i recently completed my first viewing of shawshank redemption and i must say,"['recently', 'completed', 'first', 'viewing', 'shawshank', 'redemption', 'must', 'say']",0.0,positive
+Lacks realism in moments,25 October 2023,lacks realism in moments,"['lack', 'realism', 'moment']",0.0,positive
+The Shawshank Redemption: A Timeless Masterpiece,23 October 2023,the shawshank redemption a timeless masterpiece,"['shawshank', 'redemption', 'timeless', 'masterpiece']",0.6249,positive
+Life affirming,21 October 2023,life affirming,"['life', 'affirming']",0.0,positive
+You need to watch this movie!!,20 October 2023,you need to watch this movie,"['need', 'watch', 'movie']",0.0,positive
+"Thank you, Stephen King",19 October 2023,thank you stephen king,"['thank', 'stephen', 'king']",0.3612,positive
+My most favourite movie,19 October 2023,my most favourite movie,"['favourite', 'movie']",0.0,positive
+so deep flim,18 October 2023,so deep flim,"['deep', 'flim']",0.0,positive
+No plot nothing I'm am shocked,18 October 2023,no plot nothing im am shocked,"['plot', 'nothing', 'im', 'shocked']",-0.0613,negative
+Nice movie,18 October 2023,nice movie,"['nice', 'movie']",0.4215,positive
+Masterpiece for Years,17 October 2023,masterpiece for years,"['masterpiece', 'year']",0.6249,positive
+Review,16 October 2023,review,['review'],0.0,positive
+This movie is timeless.,16 October 2023,this movie is timeless,"['movie', 'timeless']",0.0,positive
+Fantastic Film For Everyone,16 October 2023,fantastic film for everyone,"['fantastic', 'film', 'everyone']",0.5574,positive
+An Unforgettable Masterpiece - The Shawshank Redemption,16 October 2023,an unforgettable masterpiece  the shawshank redemption,"['unforgettable', 'masterpiece', 'shawshank', 'redemption']",0.6249,positive
+very nice movie,15 October 2023,very nice movie,"['nice', 'movie']",0.4754,positive
+Shawshank redeems hollywood,15 October 2023,shawshank redeems hollywood,"['shawshank', 'redeems', 'hollywood']",0.0,positive
