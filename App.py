@@ -33,6 +33,13 @@ from selenium.common.exceptions import NoSuchElementException
 from bs4 import BeautifulSoup
 import requests
 
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
+@st.experimental_singleton
+def get_driver(options):
+    return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+
 def scrape_imdb_reviews(movie_url, no_of_pages):
     global movie_name
     global my_bar
@@ -44,7 +51,8 @@ def scrape_imdb_reviews(movie_url, no_of_pages):
     chrome_options.add_argument("--window-size=1920x1080")  # Set a reasonable window size
 
     # Create a headless WebDriver
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = get_driver(chrome_options)
+
 
     try:
         # Navigate to the movie URL using the headless WebDriver
