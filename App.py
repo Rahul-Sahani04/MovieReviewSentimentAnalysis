@@ -36,9 +36,9 @@ import requests
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-@st.experimental_singleton
-def get_driver(options):
-    return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+@st.cache_resource
+def get_driver(_chrome_options):
+    return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=_chrome_options)
 
 def scrape_imdb_reviews(movie_url, no_of_pages):
     global movie_name
@@ -72,7 +72,7 @@ def scrape_imdb_reviews(movie_url, no_of_pages):
         # Click "load more" button until the user wants
         while True:
             try:
-                if int(no_of_pages > 0):
+                if int(no_of_pages) > 0:
                     if int(per_cycle_increment) * NoOfLoadMore < 100:
                         my_bar.progress(int(per_cycle_increment) * NoOfLoadMore, text=progress_text)
                     if NoOfLoadMore > int(no_of_pages):
@@ -87,9 +87,13 @@ def scrape_imdb_reviews(movie_url, no_of_pages):
 
             except NoSuchElementException:
                 # Break the loop when the "load more" button is not found
+                print("No such element found. Exiting the loop.")
                 break
-            except KeyError:
+            except Exception as e:
+                # Print additional information about the error
+                print(f"An error occurred: {e}")
                 break
+
             
 
         # Extracting review text after all "load more" clicks
