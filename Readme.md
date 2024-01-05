@@ -52,11 +52,11 @@ This project focuses on sentiment analysis of movie reviews extracted from IMDb.
 
 The project is organized into several components to facilitate a structured and modular approach.
 
+- **`MovieReview.ipynb`**: The Main Jupyter Notebook.
 - **`web_scraping.ipynb`**: Jupyter Notebook dedicated to web scraping IMDb movie reviews.
 - **`data_preprocessing.ipynb`**: Jupyter Notebook focused on cleaning and preparing the scraped data through text cleaning, tokenization, and lemmatization.
 - **`sentiment_analysis.ipynb`**: Jupyter Notebook handling sentiment analysis using the VADER sentiment analysis tool, with a focus on classifying reviews as positive or negative.
-- **`data/`**: Directory containing scraped and processed data for reference.
-- **`images/`**: Directory storing visualizations or images generated during the analysis.
+- **`results/`**: Directory containing scraped,  processed data for reference and visualizations or images generated during the analysis.
 - **`README.md`**: Project documentation providing an overview and guidance.
 
 ### Web Scraping
