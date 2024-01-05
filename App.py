@@ -2,14 +2,14 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from bs4 import BeautifulSoup
-import requests
 import os
 import re
 import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
-from sklearn.metrics import accuracy_score, classification_report
+
+import time
 
 nltk.download("wordnet")
 nltk.download("vader_lexicon")
@@ -24,7 +24,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from bs4 import BeautifulSoup
-import requests
+
 
 def scrape_imdb_reviews(movie_url, no_of_pages):
     global movie_name
@@ -54,7 +54,7 @@ def scrape_imdb_reviews(movie_url, no_of_pages):
         if int(no_of_pages > 0):
             per_cycle_increment = 100 / int(no_of_pages)
 
-        # Click "load more" button until the user wants
+
         while True:
             try:
                 if int(no_of_pages) > 0:
@@ -71,6 +71,7 @@ def scrape_imdb_reviews(movie_url, no_of_pages):
 
                 # Wait for dynamic content to load (adjust as needed)
                 driver.implicitly_wait(5)
+                time.sleep(1)
 
             except NoSuchElementException:
                 # Break the loop when the "load more" button is not found
@@ -80,10 +81,6 @@ def scrape_imdb_reviews(movie_url, no_of_pages):
                 # Print additional information about the error
                 print(f"An error occurred: {e}")
                 break
-
-            finally:
-                # Close the WebDriver after scraping
-                driver.quit()
 
         # Extracting review text after all "load more" clicks
         soup = BeautifulSoup(driver.page_source, "html.parser")
@@ -182,9 +179,7 @@ def perform_sentiment_analysis(movie_code, num_of_pages):
     df["review_date"] = pd.to_datetime(df["date"], errors="coerce")
 
     # Filter the data to include only reviews from 2018 or 2019
-    df_filtered = df[
-        (df["review_date"].dt.year == 2018) | (df["review_date"].dt.year == 2019)
-    ]
+    df_filtered = df
 
     # Create a line graph showing the number of positive and negative reviews over time
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 12))
