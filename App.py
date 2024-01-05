@@ -19,13 +19,6 @@ nltk.download("stopwords")
 movie_name = ""
 
 
-# Function to scrape IMDb movie reviews
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from bs4 import BeautifulSoup
-import requests
-
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -33,26 +26,18 @@ from selenium.common.exceptions import NoSuchElementException
 from bs4 import BeautifulSoup
 import requests
 
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-
-@st.cache_resource
-def get_driver(_chrome_options):
-    return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=_chrome_options)
-
 def scrape_imdb_reviews(movie_url, no_of_pages):
     global movie_name
     global my_bar
-    
     # Set up ChromeOptions for headless browsing
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-gpu")  # Necessary for headless mode on some systems
     chrome_options.add_argument("--window-size=1920x1080")  # Set a reasonable window size
-
+    chrome_options.add_argument("--remote-debugging-port=0")
+    
     # Create a headless WebDriver
-    driver = get_driver(chrome_options)
-
+    driver = webdriver.Chrome(options=chrome_options)
 
     try:
         # Navigate to the movie URL using the headless WebDriver
@@ -62,19 +47,21 @@ def scrape_imdb_reviews(movie_url, no_of_pages):
         movie_element = driver.find_element(By.CSS_SELECTOR, "a[itemprop='url']")
         movie_name = movie_element.text.strip()
 
-        # Print the movie name 
+        # Print the movie name
         print(f"Movie Name: {movie_name}")
-        
+
         NoOfLoadMore = 0
         if int(no_of_pages > 0):
             per_cycle_increment = 100 / int(no_of_pages)
-        
+
         # Click "load more" button until the user wants
         while True:
             try:
                 if int(no_of_pages) > 0:
                     if int(per_cycle_increment) * NoOfLoadMore < 100:
-                        my_bar.progress(int(per_cycle_increment) * NoOfLoadMore, text=progress_text)
+                        my_bar.progress(
+                            int(per_cycle_increment) * NoOfLoadMore, text=progress_text
+                        )
                     if NoOfLoadMore > int(no_of_pages):
                         break
                 # Extracting "load more" button and clicking it
@@ -94,7 +81,9 @@ def scrape_imdb_reviews(movie_url, no_of_pages):
                 print(f"An error occurred: {e}")
                 break
 
-            
+            finally:
+                # Close the WebDriver after scraping
+                driver.quit()
 
         # Extracting review text after all "load more" clicks
         soup = BeautifulSoup(driver.page_source, "html.parser")
@@ -106,7 +95,7 @@ def scrape_imdb_reviews(movie_url, no_of_pages):
         for review_div, date_div in zip(review_divs, date_divs):
             review_text = review_div.get_text(strip=True)
             review_date = date_div.get_text(strip=True)
-            
+
             review = {"text": review_text, "date": review_date}
             reviews.append(review)
 
@@ -146,6 +135,7 @@ def lemmatize_text(tokens):
     lemmatizer = WordNetLemmatizer()
     return [lemmatizer.lemmatize(token) for token in tokens]
 
+
 # Function to perform sentiment analysis
 def perform_sentiment_analysis(movie_code, num_of_pages):
     # IMDb movie URL
@@ -181,20 +171,27 @@ def perform_sentiment_analysis(movie_code, num_of_pages):
 
     # Save results to CSV
     save_path = "results"
-    df.to_csv(os.path.join(save_path, f"movie_reviews_with_sentiment_for_{movie_code}.csv"), index=False)
+    df.to_csv(
+        os.path.join(save_path, f"movie_reviews_with_sentiment_for_{movie_code}.csv"),
+        index=False,
+    )
 
     st.subheader(f"Movie Name: {movie_name}")
 
     # Create a new column for the review date as a datetime object
-    df["review_date"] = pd.to_datetime(df["date"], errors='coerce')
+    df["review_date"] = pd.to_datetime(df["date"], errors="coerce")
 
     # Filter the data to include only reviews from 2018 or 2019
-    df_filtered = df[(df["review_date"].dt.year == 2018) | (df["review_date"].dt.year == 2019)]
+    df_filtered = df[
+        (df["review_date"].dt.year == 2018) | (df["review_date"].dt.year == 2019)
+    ]
 
     # Create a line graph showing the number of positive and negative reviews over time
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 12))
 
-    df_filtered.groupby([df_filtered["review_date"].dt.date, "predicted_sentiment"]).size().unstack().plot(kind='line', ax=ax1)
+    df_filtered.groupby(
+        [df_filtered["review_date"].dt.date, "predicted_sentiment"]
+    ).size().unstack().plot(kind="line", ax=ax1)
     ax1.set_title(f"Number of Positive and Negative Reviews Over Time ({movie_code})")
     ax1.set_xlabel("Review Date")
     ax1.set_ylabel("Number of Reviews")
@@ -205,13 +202,16 @@ def perform_sentiment_analysis(movie_code, num_of_pages):
         for col in df_filtered["predicted_sentiment"].value_counts().index
     ]
 
-    df_filtered["predicted_sentiment"].value_counts().plot(kind="bar", color=colors, ax=ax2)
-    ax2.set_title(f"Distribution of Predicted Sentiments in IMDb Reviews ({movie_code})")
+    df_filtered["predicted_sentiment"].value_counts().plot(
+        kind="bar", color=colors, ax=ax2
+    )
+    ax2.set_title(
+        f"Distribution of Predicted Sentiments in IMDb Reviews ({movie_code})"
+    )
     ax2.set_xlabel("Predicted Sentiment")
     ax2.set_ylabel("Count")
 
     plt.tight_layout()
-
 
     # Save the plot to files
     plot_file_path = os.path.join(save_path, f"sentiment_analysis_for_{movie_code}.png")
@@ -226,7 +226,9 @@ def perform_sentiment_analysis(movie_code, num_of_pages):
 
     # Display a message indicating positive sentiment
     more_counts = df["predicted_sentiment"].value_counts().index
-    positive_message = "The movie has positive reviews! You should consider watching it."
+    positive_message = (
+        "The movie has positive reviews! You should consider watching it."
+    )
     negative_message = "The sentiment analysis did not identify a clear positive sentiment in the reviews."
 
     st.subheader("Sentiment Analysis Results:")
@@ -251,7 +253,11 @@ GetCode = st.image(
 
 # Input field for IMDb code
 movie_code = st.text_input("Enter IMDb Code (e.g., tt12915716, tt0111161):")
-num_of_pages = st.number_input("Enter No. of Review Pages to scrape (Enter 0 for scraping all the reviews <- Takes more time):", step=1, min_value=0)
+num_of_pages = st.number_input(
+    "Enter No. of Review Pages to scrape (Enter 0 for scraping all the reviews <- Takes more time):",
+    step=1,
+    min_value=0,
+)
 
 progress_text = "Operation in progress. Please wait."
 
@@ -260,7 +266,7 @@ if st.button("Perform Sentiment Analysis"):
     if movie_code:
         GetCode.empty()
         if num_of_pages == 0:
-            with st.spinner('Loading...'):
+            with st.spinner("Loading..."):
                 perform_sentiment_analysis(movie_code, num_of_pages)
         else:
             my_bar = st.progress(0, text=progress_text)
